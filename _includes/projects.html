@@ -19,7 +19,7 @@
     {% else %}
       {% for item in site.data.projects.index %}
         <h4>{{ item.name }}</h4>
-        <p class="text-justify">{{ item.description }} <a href="{{ item.url }}" style="color: #007bff;">read more</a></p>
+        <p class="text-justify">{{ item.description }} <a href="/projects/{{ item.url }}" style="color: #007bff;">read more</a></p>
       {% endfor %}
     {% endif %}
   </div>
