@@ -1,17 +1,25 @@
+<style>
+  .text-justify {
+    text-align: justify;
+  }
+</style>
+
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Projects</h3>
     {% if page.title == "Home" %}
-      {% for item in site.data.publications.featured %}
-        <p>{{ item.name }} [<a href="{{ item.url }}">link</a>]</p>
+      {% for item in site.data.projects.featured %}
+        <h4>{{ item.name }}</h4>
+        <p class="text-justify">{{ item.description }} <a href="{{ item.url }}" style="color: #007bff;">read more</a></p>
       {% endfor %}
-      <!-- Add a more prominent link to the publications page -->
+      <!-- Add a more prominent link to the projects page -->
       <p class="mt-4">
-        <a href="/publications" style="color: #007bff; text-decoration: none; font-weight: bold;">View All Publications</a>
+        <a href="/projects" style="color: #007bff; text-decoration: none; font-weight: bold;">View All Projects</a>
       </p>
     {% else %}
-      {% for item in site.data.publications.index %}
-        <p>{{ item.name }} [<a href="{{ item.url }}">link</a>]</p>
+      {% for item in site.data.projects.index %}
+        <h4>{{ item.name }}</h4>
+        <p class="text-justify">{{ item.description }} <a href="{{ item.url }}" style="color: #007bff;">read more</a></p>
       {% endfor %}
     {% endif %}
   </div>
