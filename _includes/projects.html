@@ -10,7 +10,7 @@
     {% if page.title == "Home" %}
       {% for item in site.data.projects.featured %}
         <h4>{{ item.name }}</h4>
-        <p class="text-justify">{{ item.description }} <a href="{{ item.url }}" style="color: #007bff;">read more</a></p>
+        <p class="text-justify">{{ item.description }} <a href="/projects/{{ item.url }}" style="color: #007bff;">read more</a></p> 
       {% endfor %}
       <!-- Add a more prominent link to the projects page -->
       <p class="mt-4">
