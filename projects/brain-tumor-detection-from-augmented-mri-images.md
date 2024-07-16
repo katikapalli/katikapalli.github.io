@@ -1,18 +1,14 @@
 ---
 layout: page
-title: "Primary Investigator"
+title: "Brain Tumor Detection from Augmented MRI Images"
 ---
 
-Researcher - Physics & Astronomy
+<style>
+.justify-text {
+    text-align: justify;
+}
+</style>
 
-Some University - 1 Main Street, Canada
-
-Phone: (000) 000-0000
-
-Email: hello@university.edu
-
-Office: Science Building 505
-
----
-
-Nullam lacinia eros eu lectus efficitur euismod. Phasellus ac urna ligula. Curabitur a massa volutpat, convallis velit ut, varius nunc. Ut venenatis pellentesque nulla, luctus accumsan eros suscipit vitae. Proin odio neque, hendrerit cursus mattis ut, aliquet ut nulla. Nulla facilisi. Donec tempus rutrum libero vel cursus.
+<div class="justify-text">
+    In this project, brain tumors were detected from MRI images using a fine-tuned Deep CNN model trained on the Br35H benchmark dataset. The model was trained using k-fold cross-validation to demonstrate model generalization and Grad-CAM to visualize and interpret model predictions. The results were published in the Journal of Autonomous Intelligence by Frontier Scientific Publishing. 
+</div>
