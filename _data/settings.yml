@@ -7,9 +7,9 @@ menu:
 
 social:
 - {icon: 'github', link: 'https://github.com/katikapalli'}
-- {icon: 'x-twitter', link: 'https://x.com/lokesh_chetty'}
+- {icon: 'square-x-twitter', link: 'https://x.com/lokesh_chetty'}
 - {icon: 'instagram', link: 'https://instagram.com/katikapalli.lokesh'}
-- {icon: 'linkedin-in', link: 'https://www.linkedin.com/in/katikapallilokesh/'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/katikapallilokesh/'}
 
 contacts:
 - {name: 'K Lokesh', title: 'Research Assistant', lab: 'VL2G', lab_full: 'Vision, Language, and Learning Group', department: 'Computer Science and Engineering', institution: 'Indian Institute of Technology, Jodhpur', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'katikapalli.lokesh@yahoo.com', office: 'Science Building 505', image: 'assets/img/contact.jpg'}
