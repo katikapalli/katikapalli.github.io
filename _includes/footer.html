@@ -25,10 +25,23 @@
           <a href="{{ item.link }}" class="ms-3 icon-size"><i class="fab fa-{{ item.icon }}"></i></a>
         {% endfor %}
       </div>
-<!--       <div class="col-12 text-center mt-3">
+      <!-- Uncomment and update the following line if needed -->
+      <!-- <div class="col-12 text-center mt-3">
         <p>Copyright © 2024. All rights reserved. Design by Paul Le</p>
       </div> -->
     </div>
   </footer>
+
+  <!-- Adding a script to log potential errors for debugging -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const icons = document.querySelectorAll(".fab");
+      icons.forEach(icon => {
+        icon.addEventListener("error", () => {
+          console.error(`Icon failed to load: ${icon.className}`);
+        });
+      });
+    });
+  </script>
 </body>
 </html>
