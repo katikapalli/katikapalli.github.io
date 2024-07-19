@@ -6,20 +6,20 @@
 
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Projects</h3>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Blog</h3>
     {% if page.title == "Home" %}
-      {% for item in site.data.projects.featured %}
+      {% for item in site.data.blog.featured %}
         <h4>{{ item.name }}</h4>
-        <p class="text-justify">{{ item.description }} <a href="/projects/{{ item.url }}" style="color: #007bff;">read more</a></p> 
+        <p class="text-justify">{{ item.description }} <a href="/blog/{{ item.url }}" style="color: #007bff;">read more</a></p> 
       {% endfor %}
-      <!-- Add a more prominent link to the projects page -->
+      <!-- Add a more prominent link to the blog page -->
       <p class="mt-4">
-        <a href="/projects" style="color: #007bff; text-decoration: none; font-weight: bold;">View All Projects</a>
+        <a href="/blog" style="color: #007bff; text-decoration: none; font-weight: bold;">View All Blogs</a>
       </p>
     {% else %}
-      {% for item in site.data.projects.index %}
+      {% for item in site.data.blog.index %}
         <h4>{{ item.name }}</h4>
-        <p class="text-justify">{{ item.description }} <a href="/projects/{{ item.url }}" style="color: #007bff;">read more</a></p>
+        <p class="text-justify">{{ item.description }} <a href="/blog/{{ item.url }}" style="color: #007bff;">read more</a></p>
       {% endfor %}
     {% endif %}
   </div>
