@@ -5,11 +5,22 @@
   .read-more {
     color: #e7005e !important;
     text-decoration: none;
+    position: relative; /* Required for the pseudo-element */
+    transition: color 0.3s; /* Smooth color transition */
   }
-  .read-more:hover {
-    color: #e7005e !important;
-    text-decoration: none; /* Ensure underline is removed on hover */
-    font-weight: bold;
+  .read-more::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px; /* Adjust as needed */
+    left: 50%;
+    background-color: #e7005e;
+    transition: width 0.3s, left 0.3s; /* Smooth width and position transition */
+  }
+  .read-more:hover::after {
+    width: 100%;
+    left: 0;
   }
   .col-custom-3-5 {
     flex: 0 0 auto;
@@ -20,6 +31,7 @@
     width: 71%; /* 8.5 / 12 * 100% */
   }
 </style>
+
 
 <div class="row g-5 mb-5">
   <div>
