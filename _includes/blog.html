@@ -5,11 +5,12 @@
   .read-more {
     color: #e7005e !important;
     text-decoration: none;
-    font-weight: bold;
+
   }
   .read-more:hover {
     color: #e7005e !important;
     text-decoration: none; /* Ensure underline is removed on hover */
+    font-weight: bold;
   }
 </style>
 
@@ -26,7 +27,7 @@
             <h4>{{ item.name }}</h4>
             <p>{{item.date}}</p>
             <p>{{ item.description }}</p>
-            <a href="/blog/{{ item.url }}" class="read-more">read more</a>
+            <a href="/blog/{{ item.url }}" class="read-more">Read more</a>
           </div>
         </div>
       {% endfor %}
@@ -44,7 +45,7 @@
             <h4>{{ item.name }}</h4>
             <p>{{item.date}}</p>
             <p>{{ item.description }}</p>
-            <a href="/blog/{{ item.url }}" class="read-more">read more</a>
+            <a href="/blog/{{ item.url }}" class="read-more">Read more</a>
           </div>
         </div>
       {% endfor %}
