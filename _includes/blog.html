@@ -9,8 +9,15 @@
     <h3 class="fw-bold border-bottom pb-3 mb-5">Blog</h3>
     {% if page.title == "Home" %}
       {% for item in site.data.blog.featured %}
-        <h4>{{ item.name }}</h4>
-        <p class="text-justify">{{ item.description }} <a href="/blog/{{ item.url }}" style="color: #007bff;">read more</a></p> 
+        <div class="row">
+          <div class="col-md-3">
+            <img src="{{ item.image }}" width="100%">
+          </div>
+          <div class="col-md-9">
+            <h4>{{ item.name }}</h4>
+            <p class="text-justify">{{ item.description }} <a href="/blog/{{ item.url }}" style="color: #007bff;">read more</a></p>
+          </div>
+        </div>
       {% endfor %}
       <!-- Add a more prominent link to the blog page -->
       <p class="mt-4">
@@ -18,8 +25,15 @@
       </p>
     {% else %}
       {% for item in site.data.blog.index %}
-        <h4>{{ item.name }}</h4>
-        <p class="text-justify">{{ item.description }} <a href="/blog/{{ item.url }}" style="color: #007bff;">read more</a></p>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="{{ item.image }}" width="100%">
+          </div>
+          <div class="col-md-9">
+            <h4>{{ item.name }}</h4>
+            <p class="text-justify">{{ item.description }} <a href="/blog/{{ item.url }}" style="color: #007bff;">read more</a></p>
+          </div>
+        </div>
       {% endfor %}
     {% endif %}
   </div>
