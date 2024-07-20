@@ -10,10 +10,10 @@
     {% if page.title == "Home" %}
       {% for item in site.data.blog.featured %}
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-6">
             <img src="{{ item.image }}" width="100%">
           </div>
-          <div class="col-md-9">
+          <div class="col-md-6">
             <h4>{{ item.name }}</h4>
             <p class="text-justify">{{ item.description }} <a href="/blog/{{ item.url }}" style="color: #007bff;">read more</a></p>
           </div>
