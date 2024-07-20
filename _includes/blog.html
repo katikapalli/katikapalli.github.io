@@ -20,10 +20,10 @@
     {% if page.title == "Home" %}
       {% for item in site.data.blog.featured %}
         <div class="row blog-entry">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <img src="{{ site.github.url }}/{{ item.image }}" alt="blog" width="100%">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-7">
             <h4>{{ item.name }}</h4>
             <p>{{item.date}}</p>
             <p>{{ item.description }}</p>
