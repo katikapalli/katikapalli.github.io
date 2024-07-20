@@ -15,7 +15,9 @@
           </div>
           <div class="col-md-8">
             <h4>{{ item.name }}</h4>
-            <p class="text-justify">{{ item.description }} <a href="/blog/{{ item.url }}" style="color: #007bff;">read more</a></p>
+            <p>{{item.date}}</p>
+            <p class="text-justify">{{ item.description }} </p>
+            <a href="/blog/{{ item.url }}" style="color: #007bff;">read more</a>
           </div>
         </div>
       {% endfor %}
@@ -31,7 +33,9 @@
           </div>
           <div class="col-md-9">
             <h4>{{ item.name }}</h4>
-            <p class="text-justify">{{ item.description }} <a href="/blog/{{ item.url }}" style="color: #007bff;">read more</a></p>
+            <p>{{item.date}}</p>
+            <p class="text-justify">{{ item.description }} </p>
+            <a href="/blog/{{ item.url }}" style="color: #007bff;">read more</a>
           </div>
         </div>
       {% endfor %}
