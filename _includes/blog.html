@@ -10,10 +10,10 @@
     {% if page.title == "Home" %}
       {% for item in site.data.blog.featured %}
         <div class="row">
-          <div class="col-md-3.5">
+          <div class="col-md-4">
             <img src="{{ site.github.url }}/{{ item.image }}" alt="blog" width="100%">
           </div>
-          <div class="col-md-8.5">
+          <div class="col-md-8">
             <h4>{{ item.name }}</h4>
             <p>{{item.date}}</p>
             <p class="text-justify">{{ item.description }} </p>
@@ -28,10 +28,10 @@
     {% else %}
       {% for item in site.data.blog.index %}
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <img src="{{ site.github.url }}/{{ item.image }}" alt="blog" width="100%">
           </div>
-          <div class="col-md-9">
+          <div class="col-md-8">
             <h4>{{ item.name }}</h4>
             <p>{{item.date}}</p>
             <p class="text-justify">{{ item.description }} </p>
