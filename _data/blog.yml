@@ -2,7 +2,7 @@ featured:
   - name: "Visual Sentiment Analysis Using Ensemble Learning"
     description: "In this project, visual sentiment analysis was conducted on AffectNet using homogeneous ensemble learning with weighted voting. The approach involved utilizing seven models, including a proposed convolutional neural network (CNN) and six..."
     url: 'visual-sentiment-analysis-using-ensemble-learning'
-    imgage: 'assets/img/contact.jpg'
+    imgage: 'assets/img/home.jpg'
     
   - name: "Visual Sentiment Analysis Using Few-shot Learning"
     description: "In this project, the limited data problem in visual sentiment analysis was addressed by employing a combination of advanced methodologies. The approaches used included N-way-k-shot few-shot learning to handle the limited data scenario..."
