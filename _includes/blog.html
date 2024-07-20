@@ -11,7 +11,7 @@
       {% for item in site.data.blog.featured %}
         <div class="row">
           <div class="col-md-5">
-            <img src="{{ site.github.url }}/{{ contact.image }}" width="100%">
+            <img src="{{ site.github.url }}/{{ item.image }}" width="100%">
           </div>
           <div class="col-md-7">
             <h4>{{ item.name }}</h4>
@@ -27,7 +27,7 @@
       {% for item in site.data.blog.index %}
         <div class="row">
           <div class="col-md-5">
-            <img src="{{ site.github.url }}/{{ contact.image }}" width="100%">
+            <img src="{{ item.image }}" width="100%">
           </div>
           <div class="col-md-7">
             <h4>{{ item.name }}</h4>
