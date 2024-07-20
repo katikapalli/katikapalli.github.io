@@ -1,6 +1,13 @@
 <style>
-  .text-justify {
-    text-align: justify;
+  .blog-entry {
+    margin-bottom: 2rem; /* Adjust this value as needed for desired spacing */
+  }
+  .read-more {
+    color: #e7005e;
+    text-decoration: none;
+  }
+  .read-more:hover {
+    text-decoration: underline; /* Optional: add underline on hover */
   }
 </style>
 
@@ -9,15 +16,15 @@
     <h3 class="fw-bold border-bottom pb-3 mb-5">Blog</h3>
     {% if page.title == "Home" %}
       {% for item in site.data.blog.featured %}
-        <div class="row">
+        <div class="row blog-entry">
           <div class="col-md-4">
             <img src="{{ site.github.url }}/{{ item.image }}" alt="blog" width="100%">
           </div>
           <div class="col-md-8">
             <h4>{{ item.name }}</h4>
             <p>{{item.date}}</p>
-            <p class="text-justify">{{ item.description }} </p>
-            <a href="/blog/{{ item.url }}" style="color: #007bff;">read more</a>
+            <p>{{ item.description }}</p>
+            <a href="/blog/{{ item.url }}" class="read-more">read more</a>
           </div>
         </div>
       {% endfor %}
@@ -27,15 +34,15 @@
       </p>
     {% else %}
       {% for item in site.data.blog.index %}
-        <div class="row">
+        <div class="row blog-entry">
           <div class="col-md-4">
             <img src="{{ site.github.url }}/{{ item.image }}" alt="blog" width="100%">
           </div>
           <div class="col-md-8">
             <h4>{{ item.name }}</h4>
             <p>{{item.date}}</p>
-            <p class="text-justify">{{ item.description }} </p>
-            <a href="/blog/{{ item.url }}" style="color: #007bff;">read more</a>
+            <p>{{ item.description }}</p>
+            <a href="/blog/{{ item.url }}" class="read-more">read more</a>
           </div>
         </div>
       {% endfor %}
