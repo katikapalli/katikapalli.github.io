@@ -5,12 +5,19 @@
   .read-more {
     color: #e7005e !important;
     text-decoration: none;
-
   }
   .read-more:hover {
     color: #e7005e !important;
     text-decoration: none; /* Ensure underline is removed on hover */
     font-weight: bold;
+  }
+  .col-custom-3-5 {
+    flex: 0 0 auto;
+    width: 29.166667%; /* 3.5 / 12 * 100% */
+  }
+  .col-custom-8-5 {
+    flex: 0 0 auto;
+    width: 70.833333%; /* 8.5 / 12 * 100% */
   }
 </style>
 
@@ -20,10 +27,10 @@
     {% if page.title == "Home" %}
       {% for item in site.data.blog.featured %}
         <div class="row blog-entry">
-          <div class="col-md-3">
+          <div class="col-custom-3-5">
             <img src="{{ site.github.url }}/{{ item.image }}" alt="blog" width="100%">
           </div>
-          <div class="col-md-7">
+          <div class="col-custom-8-5">
             <h4>{{ item.name }}</h4>
             <p>{{item.date}}</p>
             <p>{{ item.description }}</p>
@@ -38,10 +45,10 @@
     {% else %}
       {% for item in site.data.blog.index %}
         <div class="row blog-entry">
-          <div class="col-md-4">
+          <div class="col-custom-3-5">
             <img src="{{ site.github.url }}/{{ item.image }}" alt="blog" width="100%">
           </div>
-          <div class="col-md-8">
+          <div class="col-custom-8-5">
             <h4>{{ item.name }}</h4>
             <p>{{item.date}}</p>
             <p>{{ item.description }}</p>
