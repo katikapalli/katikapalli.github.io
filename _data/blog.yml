@@ -1,7 +1,7 @@
 featured:
   - name: "Visual Sentiment Analysis Using Ensemble Learning"
     date: 'December 7, 2024'
-    description: "In this project, visual sentiment analysis was conducted on AffectNet using homogeneous ensemble learning with weighted voting. The approach involved utilizing seven models, including a proposed convolutional neural network (CNN) and six..."
+    description: "In this project, visual sentiment analysis was conducted on AffectNet using homogeneous ensemble learning with weighted voting."
     url: 'visual-sentiment-analysis-using-ensemble-learning'
     image: 'assets/img/home.jpg'
     
@@ -14,7 +14,7 @@ featured:
 index:
   - name: "Visual Sentiment Analysis Using Ensemble Learning"
     date: 'December 7, 2024'
-    description: "In this project, visual sentiment analysis was conducted on AffectNet using homogeneous ensemble learning with weighted voting. The approach involved utilizing seven models, including a proposed convolutional neural network (CNN) and six transfer learning models. By employing weighted voting, the method leveraged the diverse strengths of each model. This innovative technique outperformed numerous existing approaches in the field of visual sentiment analysis."
+    description: "In this project, visual sentiment analysis was conducted on AffectNet using homogeneous ensemble learning with weighted voting."
     url: 'visual-sentiment-analysis-using-ensemble-learning'
     image: 'assets/img/contact.jpg'
     
