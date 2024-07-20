@@ -26,6 +26,6 @@ index:
     
   - name: "Brain Tumor Detection from Augmented MRI Images"
     date: 'Spetember 9, 2024'
-    description: "In this project, brain tumors were detected from MRI images using a fine-tuned Deep CNN model trained on the Br35H benchmark dataset. The model was trained using k-fold cross-validation to demonstrate model generalization and Grad-CAM to visualize and interpret model predictions. The results were published in the Journal of Autonomous Intelligence by Frontier Scientific Publishing."
+    description: "In this project, brain tumors were detected from MRI images using a fine-tuned Deep CNN model trained on the Br35H benchmark dataset. The model was trained using k-fold cross-validation to demonstrate model generalization and Grad-CAM to visualize and interpret model predictions."
     url: 'brain-tumor-detection-from-augmented-mri-images'
     image: 'assets/img/contact.jpg'
