@@ -5,33 +5,26 @@
   .read-more {
     color: #e7005e !important;
     text-decoration: none;
-    position: relative; /* Required for the pseudo-element */
-    transition: color 0.3s; /* Smooth color transition */
+    position: relative;
+    display: inline-block;
   }
   .read-more::after {
-    content: "";
+    content: '';
     position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -2px; /* Adjust as needed */
-    left: 50%;
+    width: 100%;
+    height: 2px; /* Adjust the thickness of the underline */
     background-color: #e7005e;
-    transition: width 0.3s, left 0.3s; /* Smooth width and position transition */
+    left: 0;
+    bottom: -2px; /* Adjust the position of the underline */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
   }
   .read-more:hover::after {
-    width: 100%;
-    left: 0;
-  }
-  .col-custom-3-5 {
-    flex: 0 0 auto;
-    width: 28%; /* 3.5 / 12 * 100% */
-  }
-  .col-custom-8-5 {
-    flex: 0 0 auto;
-    width: 72%; /* 8.5 / 12 * 100% */
+    transform: scaleX(1);
+    transform-origin: left;
   }
 </style>
-
 
 <div class="row g-5 mb-5">
   <div>
@@ -39,10 +32,10 @@
     {% if page.title == "Home" %}
       {% for item in site.data.blog.featured %}
         <div class="row blog-entry">
-          <div class="col-custom-3-5">
+          <div class="col-md-4">
             <img src="{{ site.github.url }}/{{ item.image }}" alt="blog" width="100%">
           </div>
-          <div class="col-custom-8-5">
+          <div class="col-md-8">
             <h4>{{ item.name }}</h4>
             <p>{{item.date}}</p>
             <p>{{ item.description }}</p>
@@ -57,10 +50,10 @@
     {% else %}
       {% for item in site.data.blog.index %}
         <div class="row blog-entry">
-          <div class="col-custom-3-5">
+          <div class="col-md-4">
             <img src="{{ site.github.url }}/{{ item.image }}" alt="blog" width="100%">
           </div>
-          <div class="col-custom-8-5">
+          <div class="col-md-8">
             <h4>{{ item.name }}</h4>
             <p>{{item.date}}</p>
             <p>{{ item.description }}</p>
