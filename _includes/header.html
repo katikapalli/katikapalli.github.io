@@ -1,15 +1,24 @@
+.site-title, .site-description, .menu-item {
+  color: #212429;
+}
+
+.menu-item {
+  font-size: 1.1rem; 
+}
+
 <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
   <div>
-    <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none">
-      <span class="fs-4 fw-bold" style="color: #363636;">{{ site.title }}</span>
+    <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none site-title">
+      <span class="fs-4 fw-bold">{{ site.title }}</span>
     </a>
-    <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none">
-      <span style="color: #363636;">{{ site.description }}</span>
+    <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none site-title">
+      <span>{{ site.description }}</span>
     </a>
   </div>
   <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
     {% for item in site.data.settings.menu %}
-      <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}" style="color: #363636; font-size: 1.11rem;">{{ item.name }}</a>
+      <a class="me-3 py-2 text-decoration-none menu-item" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
     {% endfor %}
   </nav>
 </header>
+
