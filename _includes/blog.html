@@ -23,6 +23,30 @@
   .read-more:hover::after {
     transform: scaleX(1);
   }
+
+  .underline-animation {
+  position: relative;
+  font-weight: normal; /* Remove bold text */
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #007bff;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 </style>
 
 <div class="row g-5 mb-5">
@@ -44,7 +68,7 @@
       {% endfor %}
       <!-- Add a more prominent link to the blog page -->
       <p class="mt-4">
-        <a href="/blog" style="color: #007bff; text-decoration: none; font-weight: bold;">View All Blogs</a>
+        <a href="/blog" class="underline-animation" style="color: #007bff; text-decoration: none;">View All Blogs</a>
       </p>
     {% else %}
       {% for item in site.data.blog.index %}
