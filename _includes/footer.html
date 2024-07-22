@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Footer Example</title>
-  <!-- Include your FontAwesome or other necessary CSS here -->
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
     .icon-size {
       font-size: 1.75rem; 
+      color: #37393e !important; 
+    }
+    .icon-size:hover {
+      color: #212429 !important; 
     }
     footer p {
       margin: 0;
@@ -17,17 +21,13 @@
   </style>
 </head>
 <body>
-  <footer class="pt-5 my-5 text-muted border-top">
+  <footer class="pt-5 mt-5 mb-0 text-muted border-top">
     <div class="row">
-      <!-- Adjust the column classes as needed for your design -->
       <div class="col-12 col-md-6 mx-auto d-flex justify-content-center social-media-icons">
         {% for item in site.data.settings.social %}
           <a href="{{ item.link }}" class="ms-3 icon-size"><i class="fab fa-{{ item.icon }}"></i></a>
         {% endfor %}
       </div>
-<!--       <div class="col-12 text-center mt-3">
-        <p>Copyright © 2024. All rights reserved. Design by Paul Le</p>
-      </div> -->
     </div>
   </footer>
 </body>
