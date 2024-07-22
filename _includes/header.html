@@ -1,54 +1,15 @@
 <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
   <div>
     <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none">
-      <span class="fs-3 fw-bold">{{ site.title }}</span>
-    </a>
-<!--     <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none">
-      <span>{{ site.description }}</span>
-    </a> -->
-  </div>
-  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-    {% for item in site.data.settings.menu %}
-      <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
-    {% endfor %}
-  </nav>
-</header>
-
-
-<!-- <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
-  <div>
-    <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none">
-      <span class="fs-4 fw-bold">{{ site.title }}</span>
+      <span class="fs-4 fw-bold" style="color: #363636;">{{ site.title }}</span>
     </a>
     <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none">
-      <span>{{ site.description }}</span>
+      <span style="color: #363636;">{{ site.description }}</span>
     </a>
   </div>
   <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
     {% for item in site.data.settings.menu %}
-      <a class="menu-item me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
+      <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}" style="color: #363636; font-size: 1.25rem;">{{ item.name }}</a>
     {% endfor %}
   </nav>
 </header>
-
-<style>
-  .menu-item {
-    position: relative; /* Required for the pseudo-element */
-    transition: color 0.3s; /* Smooth color transition */
-  }
-  .menu-item::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px; /* Adjust as needed */
-    bottom: -2px; /* Adjust as needed */
-    left: 50%;
-    background-color: currentColor;
-    transition: width 0.3s, left 0.3s; /* Smooth width and position transition */
-  }
-  .menu-item:hover::after {
-    width: 100%;
-    left: 0;
-  }
-</style>
- -->
