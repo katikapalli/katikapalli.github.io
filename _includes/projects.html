@@ -1,5 +1,5 @@
 <style>
-.project-entry {
+.blog-entry {
   margin-bottom: 2rem; /* Adjust this value as needed for desired spacing */
 }
 
@@ -45,17 +45,26 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: inline;
+}
+
+.author-list li {
+  display: inline;
+}
+
+.author-list li:not(:last-child)::after {
+  content: ", ";
 }
 </style>
 
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Projects</h3>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Blog</h3>
     {% if page.title == "Home" %}
-      {% for item in site.data.projects.featured %}
-        <div class="row project-entry">
+      {% for item in site.data.blog.featured %}
+        <div class="row blog-entry">
           <div class="col-md-4">
-            <img src="{{ site.github.url }}/{{ item.image }}" alt="project" width="100%">
+            <img src="{{ site.github.url }}/{{ item.image }}" alt="blog" width="100%">
           </div>
           <div class="col-md-8">
             <h4>{{ item.name }}</h4>
@@ -70,20 +79,20 @@
                 </li>
               {% endfor %}
             </ul>
-            <p>{{ item.description }}</p>
-            <a href="/projects/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a>
+            <p>{{ item.publisher }}</p>
+            <a href="/blog/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a>
           </div>
         </div>
       {% endfor %}
-      <!-- Add a more prominent link to the project page -->
+      <!-- Add a more prominent link to the blog page -->
       <p class="mt-4">
-        <a href="/projects" style="color: #212429; text-decoration: none;">View all projects</a>
+        <a href="/blog" style="color: #212429; text-decoration: none;">View all blogs</a>
       </p>
     {% else %}
-      {% for item in site.data.projects.index %}
-        <div class="row project-entry">
+      {% for item in site.data.blog.index %}
+        <div class="row blog-entry">
           <div class="col-md-4">
-            <img src="{{ site.github.url }}/{{ item.image }}" alt="project" width="100%">
+            <img src="{{ site.github.url }}/{{ item.image }}" alt="blog" width="100%">
           </div>
           <div class="col-md-8">
             <h4>{{ item.name }}</h4>
@@ -99,7 +108,7 @@
               {% endfor %}
             </ul>
             <p>{{ item.description }}</p>
-            <a href="/projects/{{ item.url }}" class="read-more">Read more</a>
+            <a href="/blog/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a>
           </div>
         </div>
       {% endfor %}
