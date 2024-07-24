@@ -6,26 +6,26 @@ featured:
     image: 'assets/img/11.jpg'
     
   - name: "Visual Sentiment Analysis Using Few-shot Learning"
-    date: '15/07/2024'
-    description: "In this project, the limited data problem in visual sentiment analysis was addressed by employing a combination of advanced methodologies. The approaches used included N-way-k-shot few-shot learning to handle the limited data scenario..."
+    date: 'November 11, 2023'
+    description: "In this project, the limited data problem in visual sentiment analysis was addressed by employing a combination of advanced methodologies."
     url: 'visual-sentiment-analysis-using-few-shot-learning'
-    image: 'assets/img/1.jpg'
+    image: 'assets/img/11.jpg'
 
 index:
   - name: "Visual Sentiment Analysis Using Ensemble Learning"
     date: 'December 7, 2024'
     description: "In this project, visual sentiment analysis was conducted on AffectNet using homogeneous ensemble learning with weighted voting."
     url: 'visual-sentiment-analysis-using-ensemble-learning'
-    image: 'assets/img/1.jpg'
+    image: 'assets/img/11.jpg'
     
   - name: "Visual Sentiment Analysis Using Few-shot Learning"
     date: 'January 7, 2024'
-    description: "In this project, the limited data problem in visual sentiment analysis was addressed by employing a combination of advanced methodologies. The approaches used included N-way-k-shot few-shot learning to handle the limited data scenario and semi-supervised learning to augment the data using pseudo-labeled data. The results of this innovative approach have been submitted to Data & Knowledge Engineering of ScienceDirect."
+    description: "In this project, the limited data problem in visual sentiment analysis was addressed by employing a combination of advanced methodologies."
     url: 'visual-sentiment-analysis-using-few-shot-learning'
     image: 'assets/img/11.jpg'
     
   - name: "Brain Tumor Detection from Augmented MRI Images"
     date: 'Spetember 9, 2024'
-    description: "In this project, brain tumors were detected from MRI images using a fine-tuned Deep CNN model trained on the Br35H benchmark dataset. The model was trained using k-fold cross-validation to demonstrate model generalization and Grad-CAM."
+    description: "In this project, brain tumors were detected from MRI images using a fine-tuned Deep CNN model trained on the Br35H benchmark dataset."
     url: 'brain-tumor-detection-from-augmented-mri-images'
-    image: 'assets/img/1.jpg'
+    image: 'assets/img/11.jpg'
