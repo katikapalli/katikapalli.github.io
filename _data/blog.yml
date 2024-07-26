@@ -5,11 +5,6 @@ featured:
     url: 'visual-sentiment-analysis-using-ensemble-learning'
     image: 'assets/img/11.jpg'
     
-  - name: "Visual Sentiment Analysis Using Few-shot Learning"
-    date: 'November 11, 2023'
-    description: "In this project, the limited data problem in visual sentiment analysis was addressed by employing a combination of advanced methodologies."
-    url: 'visual-sentiment-analysis-using-few-shot-learning'
-    image: 'assets/img/11.jpg'
 
 index:
   - name: "Visual Sentiment Analysis Using Ensemble Learning"
