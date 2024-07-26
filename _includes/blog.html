@@ -3,39 +3,29 @@
     margin-bottom: 2rem; /* Adjust this value as needed for desired spacing */
   }
 
-.underline-animation {
-  color: var(--underline-color) !important;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-}
+  .underline-animation {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Adjust the height of the underline as needed */
+    bottom: 0;
+    left: 50%;
+    background-color: #d60056;
+    transition: all 0.5s;
+  }
+  
+  .underline-animation:hover::after {
+    width: 100%;
+    left: 0;
+  }
 
-.underline-animation::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 1.5px;
-  background-color: var(--underline-color) !important;
-  left: 50%;
-  bottom: -2px;
-  transition: width 0.5s ease, left 0.5s ease;
-  transform: translateX(-50%);
-  transform-origin: center;
-}
-
-.underline-animation:hover::after,
-.underline-animation:focus::after {
-  width: 100%;
-  left: 0;
-  transform: translateX(0);
-}
-
-.underline-animation:not(:hover)::after,
-.underline-animation:not(:focus)::after {
-  width: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
 </style>
 
 <div class="row g-5 mb-5">
@@ -51,7 +41,7 @@
             <h4>{{ item.name }}</h4>
             <p>{{item.date}}</p>
             <p>{{ item.description }}</p>
-            <a href="/blog/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a>
+            <a href="/blog/{{ item.url }}" class="underline-animation">Read more</a>
           </div>
         </div>
       {% endfor %}
@@ -69,7 +59,7 @@
             <h4>{{ item.name }}</h4>
             <p>{{item.date}}</p>
             <p>{{ item.description }}</p>
-            <a href="/blog/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a>
+            <a href="/blog/{{ item.url }}" class="underline-animation">Read more</a>
           </div>
         </div>
       {% endfor %}
