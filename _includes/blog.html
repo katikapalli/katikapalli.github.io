@@ -48,9 +48,7 @@
       {% endfor %}
       <!-- Add a more prominent link to the blog page -->
       <div class="mt-4 flex justify-end">
-        <p>
-          <a href="/blog" style="color: #212429; text-decoration: none;">View all blogs</a>
-        </p>
+        <a href="/blog" class="text-gray-800 no-underline">View all blogs</a>
       </div>
     {% else %}
       {% for item in site.data.blog.index %}
