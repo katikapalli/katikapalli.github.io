@@ -3,7 +3,7 @@
     margin-bottom: 2rem; /* Adjust this value as needed for desired spacing */
   }
 
-.underline-animation {
+.underline-animation-blog {
   --underline-color: #d60056 !important;  /* Default color */
   position: relative;
   display: inline-block;
@@ -11,7 +11,7 @@
   text-decoration: none;
 }
 
-.underline-animation::after {
+.underline-animation-blog::after {
   content: '';
   position: absolute;
   width: 0;
@@ -22,7 +22,7 @@
   transition: all 0.5s;
 }
 
-.underline-animation:hover::after {
+.underline-animation-blog:hover::after {
   width: 100%;
   left: 0;
 }
@@ -42,7 +42,7 @@
             <h4>{{ item.name }}</h4>
             <p>{{item.date}}</p>
             <p>{{ item.description }}</p>
-            <a href="/blog/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a>
+            <a href="/blog/{{ item.url }}" class="underline-animation-blog" style="--underline-color: #d60056;">Read more</a>
           </div>
         </div>
       {% endfor %}
@@ -60,7 +60,7 @@
             <h4>{{ item.name }}</h4>
             <p>{{item.date}}</p>
             <p>{{ item.description }}</p>
-            <a href="/blog/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a>
+            <a href="/blog/{{ item.url }}" class="underline-animation-blog" style="--underline-color: #d60056;">Read more</a>
           </div>
         </div>
       {% endfor %}
