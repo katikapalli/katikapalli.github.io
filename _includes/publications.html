@@ -1,5 +1,5 @@
 <style>
-.project-entry {
+.publication-entry {
   margin-bottom: 2rem; 
 }
 
@@ -59,12 +59,12 @@
 
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Projects</h3>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
     {% if page.title == "Home" %}
-      {% for item in site.data.projects.featured %}
-        <div class="row project-entry">
+      {% for item in site.data.publications.featured %}
+        <div class="row publication-entry">
           <div class="col-md-4">
-            <img src="{{ site.github.url }}/{{ item.image }}" alt="project" width="100%">
+            <img src="{{ site.github.url }}/{{ item.image }}" alt="publication" width="100%">
           </div>
           <div class="col-md-8">
             <h4>{{ item.name }}</h4>
@@ -78,18 +78,18 @@
               {% endfor %}
             </p>
             <p>{{ item.publisher }}</p>
-            <a href="/projects/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a>
+            <a href="/publications/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a>
           </div>
         </div>
       {% endfor %}
       <p class="mt-4">
-        <a href="/projects" style="color: #212429; text-decoration: none;">View all projects</a>
+        <a href="/publications" style="color: #212429; text-decoration: none;">View all publications</a>
       </p>
     {% else %}
-      {% for item in site.data.projects.index %}
-        <div class="row project-entry">
+      {% for item in site.data.publications.index %}
+        <div class="row publication-entry">
           <div class="col-md-4">
-            <img src="{{ site.github.url }}/{{ item.image }}" alt="project" width="100%">
+            <img src="{{ site.github.url }}/{{ item.image }}" alt="publication" width="100%">
           </div>
           <div class="col-md-8">
             <h4>{{ item.name }}</h4>
@@ -103,7 +103,7 @@
               {% endfor %}
             </p>
             <p>{{ item.publisher }}</p>
-            <a href="/projects/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a>
+            <a href="/publications/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a>
           </div>
         </div>
       {% endfor %}
