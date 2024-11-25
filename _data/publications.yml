@@ -10,6 +10,7 @@ featured:
       - name: "K Lokesh"
         url: ""
     publisher: "Journal of Autonomous Intelligence"
+    link: "https://jai.front-sci.com/index.php/jai/article/view/561"
     url: 'an_improved_convolutional_neural_network-based_model_for_detecting_brain_tumors_from_augmented_mri_images'
     image: 'assets/img/brain-tumor.jpg'
 
@@ -25,6 +26,7 @@ index:
       - name: "K Lokesh"
         url: ""
     publisher: "Journal of Autonomous Intelligence"
+    link: "https://jai.front-sci.com/index.php/jai/article/view/561"
     url: 'an_improved_convolutional_neural_network-based_model_for_detecting_brain_tumors_from_augmented_mri_images'
     image: 'assets/img/brain-tumor.jpg'
 
@@ -39,6 +41,7 @@ index:
       - name: "K Lokesh"
         url: ""
     publisher: "Decision Analytics Journal"
+    link: "https://www.sciencedirect.com/science/article/pii/S2772662223000838"
     url: 'a_hybrid_deep_learning_approach_for_detecting_sentiment_polarities_and_knowledge_graph_representation_on_monkeypox_tweets'
     image: 'assets/img/knowledge-graph.jpg'
 
@@ -53,6 +56,7 @@ index:
       - name: "K Lokesh"
         url: ""
     publisher: "New Generation Computing"
+    link: "https://link.springer.com/article/10.1007/s00354-023-00227-0"
     url: 'a_cnn-lstm-based_hybrid_deep_learning_approach_for_sentiment_analysis_on_monkeypox_tweets'
     image: 'assets/img/cnn-list-hybrid-model.jpg'
     
