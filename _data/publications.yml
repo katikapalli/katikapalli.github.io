@@ -11,7 +11,7 @@ featured:
         url: ""
     publisher: "Journal of Autonomous Intelligence"
     url: 'brain-tumor'
-    image: 'assets/img/11.jpg'
+    image: 'assets/img/brain-tumor.jpg'
 
 index: 
   - name: "An improved convolutional neural network-based model for detecting brain tumors from augmented MRI images"
@@ -25,5 +25,34 @@ index:
       - name: "K Lokesh"
         url: ""
     publisher: "Journal of Autonomous Intelligence"
-    url: 'brain-tumor-detection-from-augmented-mri-images'
+    url: 'brain-tumor'
     image: 'assets/img/11.jpg'
+
+  - name: "A hybrid deep learning approach for detecting sentiment polarities and knowledge graph representation on monkeypox tweets"
+    authors: 
+      - name: "Gaurav Meena"
+        url: "https://www.curaj.ac.in/faculty/gaurav-meena"
+      - name: "Krishna Kumar Mohbey"
+        url: "https://www.curaj.ac.in/faculty/krishna-kumar-mohbey"
+      - name: "Sunil Kumar"
+        url: ""
+      - name: "K Lokesh"
+        url: ""
+    publisher: "Decision Analytics Journal"
+    url: 'knowledge-graph'
+    image: 'assets/img/knowledge-graph.jpg'
+
+  - name: "A CNN-LSTM-based hybrid deep learning approach for sentiment analysis on Monkeypox tweets"
+    authors: 
+      - name: "Krishna Kumar Mohbey"
+        url: "https://www.curaj.ac.in/faculty/krishna-kumar-mohbey"
+      - name: "Gaurav Meena"
+        url: "https://www.curaj.ac.in/faculty/gaurav-meena"
+      - name: "Sunil Kumar"
+        url: ""
+      - name: "K Lokesh"
+        url: ""
+    publisher: "New Generation Computing"
+    url: 'cnn-list-hybrid-model'
+    image: 'assets/img/cnn-list-hybrid-model.jpg'
+    
