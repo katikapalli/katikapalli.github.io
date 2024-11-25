@@ -4,7 +4,6 @@
 }
 
 .underline-animation {
-/*   --underline-color: #fe9958 !important;   */
   position: relative;
   display: inline-block;
   color: var(--underline-color) !important;
@@ -78,7 +77,8 @@
               {% endfor %}
             </p>
             <p>{{ item.publisher }}</p>
-            <a href="/publications/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a>
+            <p><a href="{{ item.link }}" class="underline-animation" style="--underline-color: #d60056;">Paper</a></p>
+<!--             <a href="/publications/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a> -->
           </div>
         </div>
       {% endfor %}
