@@ -3,6 +3,10 @@
   margin-bottom: 2rem; 
 }
 
+.publication-entry p {
+  margin: 0.5rem 0;
+}
+  
 .links {
   position: relative;
   display: inline-block;
@@ -84,7 +88,7 @@
               {% endfor %}
             </p>
             <p>{{ item.publisher }}</p>
-            <p><a href="{{ item.link }}" class="links" style="--underline-color: #d60056;">PDF</a></p>
+            <p><a href="{{ item.link }}" class="links" style="--underline-color: #ff5722;">PDF</a></p>
 <!--             <a href="/publications/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a> -->
           </div>
         </div>
@@ -110,7 +114,7 @@
               {% endfor %}
             </p>
             <p>{{ item.publisher }}</p>
-            <p><a href="{{ item.link }}" class="links" style="--underline-color: #d60056;">PDF</a></p>
+            <p><a href="{{ item.link }}" class="links" style="--underline-color: #ff5722;">PDF</a></p>
 <!--             <a href="/publications/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a> -->
           </div>
         </div>
