@@ -1,27 +1,29 @@
 <style>
   .site-title, .site-description, .menu-item {
-  color: #212429 !important;
+    color: #212429 !important;
   }
 
-.site-title:hover, .site-description:hover, .menu-item:hover {
-  color: #212429 !important;
+  .site-title:hover, .site-description:hover, .menu-item:hover {
+    color: #212429 !important;
   }
-  
+
   .menu-item {
     font-size: 1rem; 
   }
+
+  @media (max-width: 768px) {
+    .header-content {
+      text-align: center;
+    }
+  }
 </style>
 
-
 <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
-  <div>
-<!--     <a href="{{ site.github.url }}/" class="d-flex align-items-center justify-content-center d-sm-none text-decoration-none site-title">
-      <span class="fs-4 fw-bold">{{ site.title }}</span>
-    </a> -->
-    <a href="{{ site.github.url }}/" class="d-flex align-items-center d-none d-sm-flex text-decoration-none site-title">
+  <div class="header-content">
+    <a href="{{ site.github.url }}/" class="d-flex align-items-center justify-content-center text-decoration-none site-title">
       <span class="fs-4 fw-bold">{{ site.title }}</span>
     </a>
-    <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none site-title">
+    <a href="{{ site.github.url }}/" class="d-flex align-items-center justify-content-center text-decoration-none site-title">
       <span>{{ site.description }}</span>
     </a>
   </div>
@@ -31,4 +33,3 @@
     {% endfor %}
   </nav>
 </header>
-
