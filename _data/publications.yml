@@ -26,7 +26,7 @@ index:
         url: ""
     publisher: "Journal of Autonomous Intelligence"
     url: 'an_improved_convolutional_neural_network-based_model_for_detecting_brain_tumors_from_augmented_mri_images'
-    image: 'assets/img/11.jpg'
+    image: 'assets/img/brain-tumor.jpg'
 
   - name: "A hybrid deep learning approach for detecting sentiment polarities and knowledge graph representation on monkeypox tweets"
     authors: 
