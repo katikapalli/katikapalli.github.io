@@ -73,8 +73,8 @@
 
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
     {% if page.title == "Home" %}
+      <h3 class="fw-bold border-bottom pb-3 mb-5">Selecte Publications</h3>
       {% for item in site.data.publications.featured %}
         <div class="row publication-entry">
           <div class="col-md-4">
@@ -101,6 +101,7 @@
         <a href="/publications" style="color: #212429; text-decoration: none;">View all publications</a>
       </p>
     {% else %}
+      <h3 class="fw-bold border-bottom pb-3 mb-5">Publications</h3>
       {% for item in site.data.publications.index %}
         <div class="row publication-entry">
           <div class="col-md-4">
