@@ -11,19 +11,25 @@
     font-size: 1rem; 
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .header-content {
       text-align: center;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .header-content {
+      text-align: left;
     }
   }
 </style>
 
 <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
   <div class="header-content">
-    <a href="{{ site.github.url }}/" class="d-flex align-items-center justify-content-center text-decoration-none site-title">
+    <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none site-title">
       <span class="fs-4 fw-bold">{{ site.title }}</span>
     </a>
-    <a href="{{ site.github.url }}/" class="d-flex align-items-center justify-content-center text-decoration-none site-title">
+    <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none site-title">
       <span>{{ site.description }}</span>
     </a>
   </div>
