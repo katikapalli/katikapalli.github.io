@@ -25,7 +25,6 @@ This site includes:
 - **Publications**: Details about my co-authored research articles.
 - **Projects**: Insights into my ongoing and completed projects.
 - **Blog**: My thoughts on recent advancements in AI and Computer Vision.
-- **Contact**: Reach out to me for collaboration or discussions.
 
 ## Contributing
 
