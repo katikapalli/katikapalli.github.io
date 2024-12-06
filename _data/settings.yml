@@ -1,13 +1,11 @@
 menu:
 - {name: 'Publications', url: '/publications'}
-# - {name: 'Publications', url: '/publications'}
 # - {name: 'Blog', url: '/blog'}
 - {name: 'CV', url: '/cv'}
-# - {name: 'Contact', url: '/contact'}
 
 social:
 - {icon: 'github', link: 'https://github.com/katikapalli'}
-- {icon: 'x-twitter', link: 'https://x.com/lokesh_chetty'}
+- {icon: 'x-twitter', link: 'https://x.com/ktpl_lokesh'}
 - {icon: 'google-scholar', link: 'https://scholar.google.com/citations?user=2bmzIgMAAAAJ&hl=en'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/katikapallilokesh/'}
 
