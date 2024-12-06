@@ -37,10 +37,7 @@ layout: default
       </div>
       <div class="col-md-10">
         {% for section in site.data.cv.technical_skills %}
-          <p>
-            <span class="fw-bold">{{ section.title }}:</span> 
-            <span>{{ section.description | markdownify }}</span>
-          </p>
+            <p> <strong>{{ section.title }}:</strong> {{ section.description }}</p>
         {% endfor %}
       </div>
     </div>
