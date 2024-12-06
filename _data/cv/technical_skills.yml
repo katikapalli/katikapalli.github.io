@@ -1,0 +1,11 @@
+- title: 'Programming Languages'
+  description: 'C, C++, Python'
+
+- title: 'Deep Learning Frameworks'
+  description: 'TensorFlow, PyTorch, Keras'
+
+- title: 'Image Processing & Computer Vision'
+  description: 'OpenCV, Grad-CAM'
+
+- title: 'Data Analysis & Visualization'
+  description: 'NumPy, Pandas, Matplotlib, Seaborn'
