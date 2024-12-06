@@ -30,7 +30,19 @@ layout: default
         {% endfor %}
       </div>
     </div>
-   
+
+    <div class="row g-5 mb-5">
+      <div class="col-md-2">
+        <h4>Technical Skills</h4>
+      </div>
+      <div class="col-md-10">
+        {% for section in site.data.cv.technical_skills %}
+          <p class="fw-bold">{{ section.title }}</p>
+          <p>{{ section.description | markdownify }}</p>
+        {% endfor %}
+      </div>
+    </div>
+    
     <div class="text-center mt-5">
       <a href="{{ site.github.url }}/katikapalli_lokesh.pdf" class="btn-download-cv">Download CV</a>
     </div>
