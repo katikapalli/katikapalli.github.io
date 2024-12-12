@@ -1,4 +1,17 @@
 featured:
+  - name: "FSTL-SA: Few-shot Transfer Learning for Sentiment Analysis from Facial Expressions"
+    authors: 
+      - name: "Gaurav Meena"
+        url: "https://www.curaj.ac.in/faculty/gaurav-meena"
+      - name: "Krishna Kumar Mohbey"
+        url: "https://www.curaj.ac.in/faculty/krishna-kumar-mohbey"
+      - name: "K Lokesh"
+        url: ""
+    publisher: "Multimedia Tools and Applications"
+    link: ""
+    url: 'fstl_sa_few_shot_transfer_learning_for_sentiment_analysis_from_facial_expressions'
+    image: 'assets/img/few_shot.jpg'
+    
   - name: "An improved convolutional neural network-based model for detecting brain tumors from augmented MRI images"
     authors: 
       - name: "Gaurav Meena"
@@ -14,22 +27,20 @@ featured:
     url: 'an_improved_convolutional_neural_network-based_model_for_detecting_brain_tumors_from_augmented_mri_images'
     image: 'assets/img/brain-tumor.jpg'
     
-  - name: "A hybrid deep learning approach for detecting sentiment polarities and knowledge graph representation on monkeypox tweets"
+index: 
+  - name: "FSTL-SA: Few-shot Transfer Learning for Sentiment Analysis from Facial Expressions"
     authors: 
       - name: "Gaurav Meena"
         url: "https://www.curaj.ac.in/faculty/gaurav-meena"
       - name: "Krishna Kumar Mohbey"
         url: "https://www.curaj.ac.in/faculty/krishna-kumar-mohbey"
-      - name: "Sunil Kumar"
-        url: ""
       - name: "K Lokesh"
         url: ""
-    publisher: "Decision Analytics Journal"
-    link: "https://www.sciencedirect.com/science/article/pii/S2772662223000838"
-    url: 'a_hybrid_deep_learning_approach_for_detecting_sentiment_polarities_and_knowledge_graph_representation_on_monkeypox_tweets'
-    image: 'assets/img/knowledge-graph.jpg'
+    publisher: "Multimedia Tools and Applications"
+    link: ""
+    url: 'fstl_sa_few_shot_transfer_learning_for_sentiment_analysis_from_facial_expressions'
+    image: 'assets/img/few_shot.jpg'
     
-index: 
   - name: "An improved convolutional neural network-based model for detecting brain tumors from augmented MRI images"
     authors: 
       - name: "Gaurav Meena"
