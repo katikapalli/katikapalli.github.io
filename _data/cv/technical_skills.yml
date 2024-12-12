@@ -1,5 +1,5 @@
 - title: 'Programming Languages'
-  description: 'C, C++, Python'
+  description: 'C/C++, Python, JavaScript'
 
 - title: 'Deep Learning Frameworks'
   description: 'TensorFlow, PyTorch, Keras'
@@ -9,6 +9,3 @@
 
 - title: 'Data Analysis & Visualization'
   description: 'NumPy, Pandas, Matplotlib, Seaborn'
-
-- title: 'Web Development'
-  description: 'HTML, CSS, JavaScript'
