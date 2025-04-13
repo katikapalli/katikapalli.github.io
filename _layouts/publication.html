@@ -31,7 +31,40 @@ layout: default
 </style>
 
 
-<!-- <div class="container py-5">
+---
+layout: default
+---
+
+<style>
+.author-link {
+  color: #209cee;
+  text-decoration: none;
+}
+
+.author-link:hover {
+  color: #212429;
+}
+
+.btn-custom {
+  display: inline-block;
+  padding: 6px 16px; 
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #212429;
+  border: none;
+  border-radius: 25px;
+  transition: none;
+}
+.btn-custom:hover {
+  background-color: #212429;
+  color: #fff !important; 
+}
+  
+</style>
+
+
+<div class="container py-5">
   <h1 class="text-center fw-bold mb-4 mt-0">{{ page.title }}</h1>
   <p class="text-center">
     {% for author in page.authors %}
@@ -68,114 +101,37 @@ layout: default
     {% endif %}
   </div>
 
-  <div class="text-center mt-6 mb-6">
+  <div class="text-center mt-8">
     <h3 class="mb-3">Abstract</h3>
     <p style="width: 75%; margin: 0 auto; text-align: justify" style="font-size: 18px;">{{ page.abstract }}</p>
   </div>
 
   {% if page.framework_image or page.framework_caption %}
-  <div class="text-center mt-6 mb-6">
+  <div class="text-center mt-8">
     <h3 class="mb-3">Framework</h3>
     <p style="font-weight: bold; text-align: justify;">{{ page.framework_description }}</p>
     {% if page.framework_image %}
       <img src="{{ site.baseurl }}/assets/img/{{ page.framework_image }}" class="img-fluid mt-2 mb-2" style="width: 75%; margin: 0 auto; alt="Framework diagram">
     {% endif %}
     {% if page.framework_caption %}
-      <p class="mb-6" style="font-weight: bold;">{{ page.framework_caption }}</p>
+      <p class="text-center" style="font-weight: bold;">{{ page.framework_caption }}</p>
     {% endif %}
   </div>
   {% endif %}
 
   {% if page.bibtex %}
-    <div class="mt-6 mb-6">
+    <div class="mt-8">
       <h3 class="mb-3">BibTeX</h3>
-      <pre style="margin: auto; background-color: #e8f3fa; padding: 1rem 1.25rem;"><code>{{ page.bibtex }}</code></pre>
+      <pre style="margin: auto; background-color: #c7e1f3; padding: 1rem 1.25rem;"><code>{{ page.bibtex }}</code></pre>
     </div>
   {% endif %}
 
 
   {% if page.acknowledgement %}
-  <div class="mt-6 mb-6">
+  <div class="mt-8">
     <h3 class="mb-3">Acknowledgement</h3>
     <p>{{ page.acknowledgement }}</p>
   </div>
   {% endif %}
 
-</div>
- -->
-
- <div class="container py-5">
-  <h1 class="text-center fw-bold mb-4 mt-0">{{ page.title }}</h1>
-
-  <p class="text-center">
-    {% for author in page.authors %}
-      <span>
-        {% if author.link %}
-          <a href="{{ author.link }}" class="author-link" style="font-size: 18px;">{{ author.name }}</a>{% if author.superscript %}<sup>{{ author.superscript }}</sup>{% endif %}
-        {% else %}
-          <p style="font-size: 18px;">{{ author.name }}{% if author.superscript %}<sup>{{ author.superscript }}</sup>{% endif %}</p>
-        {% endif %}
-        {% if forloop.last == false %}, {% endif %}
-      </span>
-    {% endfor %}
-  </p>
-
-  <p class="text-center">
-    {% for affiliation in page.affiliations %}
-      <span><sup>{{ forloop.index }}</sup>{{ affiliation }}{% if forloop.last == false %}, {% endif %}</span>
-    {% endfor %}
-  </p>
-
-  <div class="text-center my-3">
-    {% if page.links.paper %}
-      <a href="{{ page.links.paper }}" class="btn-custom">📄 Paper</a>
-    {% endif %}
-    {% if page.links.arxiv %}
-      <a href="{{ page.links.arxiv }}" class="btn-custom">📝 arXiv</a>
-    {% endif %}
-    {% if page.links.code %}
-      <a href="{{ page.links.code }}" class="btn-custom">📝 Code</a>
-    {% endif %}
-    {% if page.links.dataset %}
-      <a href="{{ page.links.dataset }}" class="btn-custom">Dataset</a>
-    {% endif %}
-  </div>
-
-  <!-- Abstract Section -->
-  <div class="text-center mt-8">
-    <h3 class="mb-3">Abstract</h3>
-    <p class="mb-6" style="width: 75%; margin: 0 auto; text-align: justify; font-size: 18px;">
-      {{ page.abstract }}
-    </p>
-  </div>
-
-  <!-- Framework Section -->
-  {% if page.framework_image or page.framework_caption %}
-  <div class="text-center mt-8 mb-6">
-    <h3 class="mb-3">Framework</h3>
-    <p class="mb-4" style="font-weight: bold; text-align: justify;">{{ page.framework_description }}</p>
-    {% if page.framework_image %}
-      <img src="{{ site.baseurl }}/assets/img/{{ page.framework_image }}" class="img-fluid mt-2 mb-2" style="width: 75%; margin: 0 auto;" alt="Framework diagram">
-    {% endif %}
-    {% if page.framework_caption %}
-      <p class="mb-6" style="font-weight: bold;">{{ page.framework_caption }}</p>
-    {% endif %}
-  </div>
-  {% endif %}
-
-  <!-- BibTeX Section -->
-  {% if page.bibtex %}
-  <div class="mt-8 mb-6">
-    <h3 class="mb-3">BibTeX</h3>
-    <pre style="margin: auto; background-color: #e8f3fa; padding: 1rem 1.25rem;"><code>{{ page.bibtex }}</code></pre>
-  </div>
-  {% endif %}
-
-  <!-- Acknowledgement Section -->
-  {% if page.acknowledgement %}
-  <div class="mt-8 mb-6">
-    <h3 class="mb-3">Acknowledgement</h3>
-    <p>{{ page.acknowledgement }}</p>
-  </div>
-  {% endif %}
 </div>
