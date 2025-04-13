@@ -1,7 +1,20 @@
 ---
 layout: default
 ---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css" />
+
 <style>
+.icon-size {
+  font-size: 1.75rem; 
+  color: #37393e !important; 
+}
+  
+.icon-size:hover {
+  color: #212429 !important; 
+}
+  
 .author-link {
   color: #209cee;
   text-decoration: none;
@@ -52,16 +65,24 @@ layout: default
   </p>
   <div class="text-center my-3 spacing-section">
     {% if page.links.paper %}
-      <a href="{{ page.links.paper }}" class="btn-custom">📄 Paper</a>
+      <a href="{{ page.links.paper }}" class="btn-custom">
+        <i class="fa-solid fa-file-pdf icon-size"></i> Paper
+      </a>
     {% endif %}
     {% if page.links.arxiv %}
-      <a href="{{ page.links.arxiv }}" class="btn-custom">📝 arXiv</a>
+      <a href="{{ page.links.arxiv }}" class="btn-custom">
+        <i class="ai ai-arxiv icon-size"></i> arXiv
+      </a>
     {% endif %}
     {% if page.links.code %}
-      <a href="{{ page.links.code }}" class="btn-custom">📝 Code</a>
+      <a href="{{ page.links.code }}" class="btn-custom">
+        <i class="fa-brands fa-github icon-size"></i> Code
+      </a>
     {% endif %}
     {% if page.links.dataset %}
-      <a href="{{ page.links.dataset }}" class="btn-custom">Dataset</a>
+      <a href="{{ page.links.dataset }}" class="btn-custom">
+        <i class="fa-brands fa-github icon-size"></i> Dataset
+      </a>
     {% endif %}
   </div>
   <div class="text-center mt-custom spacing-section">
