@@ -16,7 +16,7 @@ authors:
     link: ""
 affiliations:
   - "Central University of Rajasthan"
-  - "VIT Vellore"
+  - "Vellore Institute of Technology"
 publisher: "New Generation Computing"
 links:
   paper: "https://link.springer.com/article/10.1007/s00354-023-00227-0"
