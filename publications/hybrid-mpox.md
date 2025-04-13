@@ -9,13 +9,14 @@ authors:
     superscript: "1"
     link: "https://www.curaj.ac.in/faculty/gaurav-meena"
   - name: "Sunil Kumar"
-    superscript: "1"
+    superscript: "2"
     link: ""
   - name: "K Lokesh"
     superscript: "1"
     link: ""
 affiliations:
   - "Central University of Rajasthan"
+  - "Vellore Institute of Technology, Vellore"
 publisher: "New Generation Computing"
 links:
   paper: "https://link.springer.com/article/10.1007/s00354-023-00227-0"
