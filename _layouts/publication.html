@@ -70,37 +70,36 @@ layout: default
 
   <div class="text-center mt-5">
     <h3 class="mb-3">Abstract</h3>
-    <p class="mb-4" style="width: 75%; margin: 0 auto; text-align: justify">{{ page.abstract }}</p>
+    <p class="mb-4" style="width: 75%; margin: 0 auto; text-align: justify" style="font-size: 18px;">{{ page.abstract }}</p>
   </div>
 
   {% if page.framework_image or page.framework_caption %}
   <div class="text-center mt-8">
     <h3 class="mb-3">Framework</h3>
-    <p style="font-weight: bold; text-align: justify; margin-bottom: 1rem;">{{ page.framework_description }}</p>
+    <p style="font-weight: bold; text-align: justify; margin-bottom: 1rem; font-size: 18px;">{{ page.framework_description }}</p>
     {% if page.framework_image %}
-      <img src="{{ site.baseurl }}/assets/img/{{ page.framework_image }}" class="img-fluid mt-5" style="width: 75%; margin: 0 auto; alt="Framework diagram">
+      <img src="{{ site.baseurl }}/assets/img/{{ page.framework_image }}" class="img-fluid mt-2 mb-2" style="width: 75%; margin: 0 auto; alt="Framework diagram">
     {% endif %}
     {% if page.framework_caption %}
-      <p class="text-center" style="font-weight: bold; margin-bottom: 1rem">{{ page.framework_caption }}</p>
+      <p class="text-center" style="font-weight: bold; margin-bottom: 1rem; font-size: 18px;">{{ page.framework_caption }}</p>
     {% endif %}
   </div>
   {% endif %}
 
   {% if page.bibtex %}
     <div class="mt-8">
-      <h3 class="mb-4 text-lg font-semibold">BibTeX</h3>
+      <h3 class="mb-3">BibTeX</h3>
       <pre class="bg-[#c0ddf2] p-4 rounded-md text-sm text-gray-800 overflow-x-auto whitespace-pre-wrap">
-        <code>{{ page.bibtex }}</code>
+        <code style="font-size: 18px;">{{ page.bibtex }}</code>
       </pre>
     </div>
   {% endif %}
 
 
-
   {% if page.acknowledgement %}
   <div class="mt-8">
     <h3 class="mb-4">Acknowledgement</h3>
-    <p>{{ page.acknowledgement }}</p>
+    <p style="font-size: 18px;">{{ page.acknowledgement }}</p>
   </div>
   {% endif %}
 
