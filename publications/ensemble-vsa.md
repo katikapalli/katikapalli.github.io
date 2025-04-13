@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "FSTL-SA: Few-shot Transfer Learning for Sentiment Analysis from Facial Expressions"
+title: "Enhancing Visual Sentiment Analysis with Ensemble-weighted Deep Convolutional Neural Networks"
 authors:
   - name: "K Lokesh"
     superscript: "1"
@@ -21,5 +21,4 @@ framework_image: "ensemble-vsa.jpg"
 framework_caption: "The overview of our proposed framework."
 bibtex: |
   
-  }
 ---
