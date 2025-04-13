@@ -9,13 +9,14 @@ authors:
     superscript: "1"
     link: "https://www.curaj.ac.in/faculty/krishna-kumar-mohbey"
   - name: "Sunil Kumar"
-    superscript: "1"
+    superscript: "2"
     link: ""
   - name: "K Lokesh"
     superscript: "1"
     link: ""
 affiliations:
   - "Central University of Rajasthan"
+  - "Woxsen University"
 links:
   paper: "https://www.sciencedirect.com/science/article/pii/S2772662223000838"
 abstract: >
