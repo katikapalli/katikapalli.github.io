@@ -102,13 +102,13 @@ layout: default
   </div>
 
   <div class="text-center mt-8">
-    <h3 class="mb-3">Abstract</h3>
+    <h3 class="mb-3 mt-8">Abstract</h3>
     <p style="width: 75%; margin: 0 auto; text-align: justify" style="font-size: 18px;">{{ page.abstract }}</p>
   </div>
 
   {% if page.framework_image or page.framework_caption %}
   <div class="text-center mt-8">
-    <h3 class="mb-3">Framework</h3>
+    <h3 class="mb-3 mt-8">Framework</h3>
     <p style="font-weight: bold; text-align: justify;">{{ page.framework_description }}</p>
     {% if page.framework_image %}
       <img src="{{ site.baseurl }}/assets/img/{{ page.framework_image }}" class="img-fluid mt-2 mb-2" style="width: 75%; margin: 0 auto; alt="Framework diagram">
@@ -121,7 +121,7 @@ layout: default
 
   {% if page.bibtex %}
     <div class="mt-8">
-      <h3 class="mb-3">BibTeX</h3>
+      <h3 class="mb-3 mt-8">BibTeX</h3>
       <pre style="margin: auto; background-color: #c7e1f3; padding: 1rem 1.25rem;"><code>{{ page.bibtex }}</code></pre>
     </div>
   {% endif %}
@@ -129,7 +129,7 @@ layout: default
 
   {% if page.acknowledgement %}
   <div class="mt-8">
-    <h3 class="mb-3">Acknowledgement</h3>
+    <h3 class="mb-3 mt-8">Acknowledgement</h3>
     <p>{{ page.acknowledgement }}</p>
   </div>
   {% endif %}
