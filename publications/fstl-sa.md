@@ -30,5 +30,4 @@ bibtex: |
   year={2024},
   publisher={Springer}
 }
-
 ---
