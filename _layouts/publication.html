@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<div class="container py-5">
+
+  <h1 class="text-center fw-bold">{{ page.title }}</h1>
+
+  <p class="text-center">
+    {% for author in page.authors %}
+      <span>{{ author.name }}{% if author.superscript %}<sup>{{ author.superscript }}</sup>{% endif %}{% if forloop.last == false %}, {% endif %}</span>
+    {% endfor %}
+  </p>
+
+  <p class="text-center">
+    {% for affiliation in page.affiliations %}
+      <span><sup>{{ forloop.index }}</sup>{{ affiliation }}{% if forloop.last == false %}, {% endif %}</span>
+    {% endfor %}
+  </p>
+
+  <div class="text-center my-3">
+    {% if page.links.paper %}
+      <a href="{{ page.links.paper }}" class="btn btn-dark">📄 Paper</a>
+    {% endif %}
+    {% if page.links.arxiv %}
+      <a href="{{ page.links.arxiv }}" class="btn btn-outline-dark">📝 arXiv</a>
+    {% endif %}
+    {% if page.links.code %}
+      <a href="{{ page.links.code }}" class="btn btn-outline-dark">📝 Code</a>
+    {% endif %}
+    {% if page.links.dataset %}
+      <a href="{{ page.links.dataset }}" class="btn btn-outline-dark">Dataset</a>
+    {% endif %}
+  </div>
+
+  <div class="mt-5">
+    <h3>Abstract</h3>
+    <p>{{ page.abstract }}</p>
+  </div>
+
+  {% if page.framework_image or page.framework_caption %}
+  <div class="mt-5">
+    <h3>Framework</h3>
+    <p>{{ page.framework_description }}</p>
+    {% if page.framework_image %}
+      <img src="{{ site.baseurl }}/assets/img/{{ page.framework_image }}" class="img-fluid my-3" alt="Framework diagram">
+    {% endif %}
+    {% if page.framework_caption %}
+      <p class="text-muted text-center"><em>{{ page.framework_caption }}</em></p>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {% if page.bibtex %}
+  <div class="mt-5">
+    <h3>BibTeX</h3>
+    <pre><code>{{ page.bibtex }}</code></pre>
+  </div>
+  {% endif %}
+
+  {% if page.acknowledgement %}
+  <div class="mt-5">
+    <h3>Acknowledgement</h3>
+    <p>{{ page.acknowledgement }}</p>
+  </div>
+  {% endif %}
+
+</div>
