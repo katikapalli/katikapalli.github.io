@@ -88,13 +88,12 @@ layout: default
 
   {% if page.bibtex %}
     <div class="mt-8">
-      <h3 class="mb-3">BibTeX</h3>
-      <pre style="background-color: #b9daf1; padding: 1rem; border-radius: 0.375rem; font-size: 0.875rem; color: #1f2937; overflow-x: auto; white-space: pre-wrap;">
-        <code>{{ page.bibtex }}</code>
+      <h3 class="mb-4 text-lg font-semibold">BibTeX</h3>
+      <pre class="bg-[#c7e1f3] p-4 text-sm text-gray-800 overflow-x-auto whitespace-pre-wrap">
+        <code>{% raw %}{{ page.bibtex | strip }}{% endraw %}</code>
       </pre>
     </div>
   {% endif %}
-
 
   {% if page.acknowledgement %}
   <div class="mt-8">
