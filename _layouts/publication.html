@@ -45,7 +45,7 @@ layout: default
       </span>
     {% endfor %}
   </p>
-  <p class="text-center">
+  <p class="text-center mt-0">
     {% for affiliation in page.affiliations %}
       <span><sup>{{ forloop.index }}</sup>{{ affiliation }}{% if forloop.last == false %}, {% endif %}</span>
     {% endfor %}
@@ -83,11 +83,11 @@ layout: default
   {% if page.bibtex %}
     <div class="mt-custom spacing-section">
       <h3 class="mb-3">BibTeX</h3>
-      <pre style="margin: auto; background-color: #c7e1f3; padding: 1rem 1.25rem;"><code>{{ page.bibtex }}</code></pre>
+      <pre style="margin: auto; background-color: #e3f0f9; padding: 1rem 1.25rem;"><code>{{ page.bibtex }}</code></pre>
     </div>
   {% endif %}
   {% if page.acknowledgement %}
-  <div class="mt-custom spacing-section">
+  <div class="mt-custom">
     <h3 class="mb-3">Acknowledgement</h3>
     <p>{{ page.acknowledgement }}</p>
   </div>
