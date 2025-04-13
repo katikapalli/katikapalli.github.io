@@ -76,12 +76,12 @@ layout: default
   {% if page.framework_image or page.framework_caption %}
   <div class="text-center mt-8">
     <h3 class="mb-3">Framework</h3>
-    <p class="font-bold text-justify mb-0">{{ page.framework_description }}</p>
+    <p stle="font-weight: bold; text-align: justify; margin-bottom: 1rem;">{{ page.framework_description }}</p>
     {% if page.framework_image %}
-      <img src="{{ site.baseurl }}/assets/img/{{ page.framework_image }}" class="img-fluid mt-5" alt="Framework diagram">
+      <img src="{{ site.baseurl }}/assets/img/{{ page.framework_image }}" class="img-fluid mt-5" style="width: 75%; margin: 0 auto; alt="Framework diagram">
     {% endif %}
     {% if page.framework_caption %}
-      <p class="font-bold text-center"><em>{{ page.framework_caption }}</em></p>
+      <p class="text-center" style="font-weight: bold;"><em>{{ page.framework_caption }}</em></p>
     {% endif %}
   </div>
   {% endif %}
