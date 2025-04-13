@@ -20,6 +20,7 @@ affiliations:
 publisher: "New Generation Computing"
 links:
   paper: "https://link.springer.com/article/10.1007/s00354-023-00227-0"
+  arxiv: "https://arxiv.org/pdf/2208.12019"
 url: "hybrid-mpox"
 image: "assets/images/hybrid-mpox.jpg"
 abstract: >
