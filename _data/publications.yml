@@ -10,7 +10,7 @@ featured:
     publisher: "Multimedia Tools and Applications"
     link: "https://link.springer.com/article/10.1007/s11042-024-20518-y"
     url: 'fstl-sa'
-    image: 'assets/images/fsta-sa.jpg'
+    image: 'assets/images/fstl-sa.jpg'
     
   - name: "An Improved Convolutional Neural Network-Based Model for Detecting Brain Tumors from Augmented MRI Images"
     authors: 
@@ -39,7 +39,7 @@ index:
     publisher: "Multimedia Tools and Applications"
     link: "https://link.springer.com/article/10.1007/s11042-024-20518-y"
     url: 'fstl-sa'
-    image: 'assets/images/fsta-sa.jpg'
+    image: 'assets/images/fstl-sa.jpg'
     
   - name: "An Improved Convolutional Neural Network-Based Model for Detecting Brain Tumors from Augmented MRI Images"
     authors: 
