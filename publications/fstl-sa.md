@@ -4,13 +4,17 @@ title: "Audiopedia: Audio QA with Knowledge"
 authors:
   - name: "Abhirama Subramanyam Penamakuri"
     superscript: "1*"
+    link: "https://example.com/paper.pdf"
   - name: "Kiran Chhatre"
     superscript: "2*"
+    link: "https://example.com/paper.pdf"
   - name: "Akshat Jain"
     superscript: "1"
+    link: "https://example.com/paper.pdf"
 affiliations:
   - "Indian Institute of Technology Jodhpur"
   - "KTH Royal Institute of Technology, Sweden"
+  - "Equal Contribution"
 links:
   paper: "https://example.com/paper.pdf"
   arxiv: "https://arxiv.org/abs/1234.56789"
