@@ -25,13 +25,13 @@ framework_image: "assets/images/hybrid-mpox.jpg"
 framework_caption: "Overview of the CNN-LSTM framework for sentiment analysis on Monkeypox tweets."
 bibtex: |
   @article{mohbey2024cnn,
-  title={A CNN-LSTM-based hybrid deep learning approach for sentiment analysis on Monkeypox tweets},
-  author={Mohbey, Krishna Kumar and Meena, Gaurav and Kumar, Sunil and Lokesh, K},
-  journal={New Generation Computing},
-  volume={42},
-  number={1},
-  pages={89--107},
-  year={2024},
-  publisher={Springer}
-}
+    title={A CNN-LSTM-based hybrid deep learning approach for sentiment analysis on Monkeypox tweets},
+    author={Mohbey, Krishna Kumar and Meena, Gaurav and Kumar, Sunil and Lokesh, K},
+    journal={New Generation Computing},
+    volume={42},
+    number={1},
+    pages={89--107},
+    year={2024},
+    publisher={Springer}
+  }
 ---
