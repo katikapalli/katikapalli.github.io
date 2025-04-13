@@ -10,9 +10,9 @@ featured:
     publisher: "Multimedia Tools and Applications"
     link: "https://link.springer.com/article/10.1007/s11042-024-20518-y"
     url: 'fstl-sa'
-    image: 'assets/img/few_shot.jpg'
+    image: 'assets/images/fsta-sa.jpg'
     
-  - name: "An improved convolutional neural network-based model for detecting brain tumors from augmented MRI images"
+  - name: "An Improved Convolutional Neural Network-Based Model for Detecting Brain Tumors from Augmented MRI Images"
     authors: 
       - name: "Gaurav Meena"
         url: "https://www.curaj.ac.in/faculty/gaurav-meena"
@@ -24,8 +24,8 @@ featured:
         url: ""
     publisher: "Journal of Autonomous Intelligence"
     link: "https://jai.front-sci.com/index.php/jai/article/view/561"
-    url: 'an_improved_convolutional_neural_network-based_model_for_detecting_brain_tumors_from_augmented_mri_images'
-    image: 'assets/img/brain-tumor.jpg'
+    url: 'brain-tumor-cnn'
+    image: 'assets/images/brain-tumor-cnn.jpg'
     
 index: 
   - name: "FSTL-SA: Few-shot Transfer Learning for Sentiment Analysis from Facial Expressions"
@@ -39,9 +39,9 @@ index:
     publisher: "Multimedia Tools and Applications"
     link: "https://link.springer.com/article/10.1007/s11042-024-20518-y"
     url: 'fstl-sa'
-    image: 'assets/img/few_shot.jpg'
+    image: 'assets/images/fsta-sa.jpg'
     
-  - name: "An improved convolutional neural network-based model for detecting brain tumors from augmented MRI images"
+  - name: "An Improved Convolutional Neural Network-Based Model for Detecting Brain Tumors from Augmented MRI Images"
     authors: 
       - name: "Gaurav Meena"
         url: "https://www.curaj.ac.in/faculty/gaurav-meena"
@@ -53,10 +53,10 @@ index:
         url: ""
     publisher: "Journal of Autonomous Intelligence"
     link: "https://jai.front-sci.com/index.php/jai/article/view/561"
-    url: 'an_improved_convolutional_neural_network-based_model_for_detecting_brain_tumors_from_augmented_mri_images'
-    image: 'assets/img/brain-tumor.jpg'
+    url: 'brain-tumor-cnn'
+    image: 'assets/images/brain-tumor-cnn.jpg'
 
-  - name: "A hybrid deep learning approach for detecting sentiment polarities and knowledge graph representation on monkeypox tweets"
+  - name: "A Hybrid Deep Learning Approach for Detecting Sentiment Polarities and Knowledge Graph Representation on Monkeypox Tweets"
     authors: 
       - name: "Gaurav Meena"
         url: "https://www.curaj.ac.in/faculty/gaurav-meena"
@@ -68,10 +68,10 @@ index:
         url: ""
     publisher: "Decision Analytics Journal"
     link: "https://www.sciencedirect.com/science/article/pii/S2772662223000838"
-    url: 'a_hybrid_deep_learning_approach_for_detecting_sentiment_polarities_and_knowledge_graph_representation_on_monkeypox_tweets'
-    image: 'assets/img/knowledge-graph.jpg'
+    url: 'mpox-kg'
+    image: 'assets/images/mpox-kg.jpg'
 
-  - name: "A CNN-LSTM-based hybrid deep learning approach for sentiment analysis on Monkeypox tweets"
+  - name: "A CNN-LSTM Hybrid Deep Learning Approach for Sentiment Analysis on Monkeypox Tweets"
     authors: 
       - name: "Krishna Kumar Mohbey"
         url: "https://www.curaj.ac.in/faculty/krishna-kumar-mohbey"
@@ -83,6 +83,6 @@ index:
         url: ""
     publisher: "New Generation Computing"
     link: "https://link.springer.com/article/10.1007/s00354-023-00227-0"
-    url: 'a_cnn-lstm-based_hybrid_deep_learning_approach_for_sentiment_analysis_on_monkeypox_tweets'
-    image: 'assets/img/cnn-list-hybrid-model.jpg'
+    url: 'hybrid-mpox'
+    image: 'assets/images/hybrid-mpox.jpg'
     
