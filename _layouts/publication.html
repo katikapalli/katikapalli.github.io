@@ -81,24 +81,22 @@ layout: default
       <img src="{{ site.baseurl }}/assets/img/{{ page.framework_image }}" class="img-fluid mt-2 mb-2" style="width: 75%; margin: 0 auto; alt="Framework diagram">
     {% endif %}
     {% if page.framework_caption %}
-      <p class="text-center" style="font-weight: bold;">{{ page.framework_caption }}</p>
+      <p class="text-center mb-4" style="font-weight: bold;">{{ page.framework_caption }}</p>
     {% endif %}
   </div>
   {% endif %}
 
   {% if page.bibtex %}
-    <div class="mt-8">
-      <h3 class="mb-3" style="margin-top: 1rem;">BibTeX</h3>
-      <pre class="bg-[#c7e1f3] p-4 text-sm text-gray-800 overflow-x-auto whitespace-pre-wrap">
-        <code>{{ page.bibtex | strip }}</code>
-      </pre>
+    <div class="mt-5 mb-4">
+      <h3 class="mb-3">BibTeX</h3>
+      <pre><code>{{ page.bibtex }}</code></pre>
     </div>
   {% endif %}
 
   {% if page.acknowledgement %}
   <div class="mt-8">
     <h3 class="mb-3">Acknowledgement</h3>
-    <p>{{ page.acknowledgement }}</p>
+    <p class="mb-4">{{ page.acknowledgement }}</p>
   </div>
   {% endif %}
 
