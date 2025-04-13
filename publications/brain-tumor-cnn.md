@@ -18,6 +18,7 @@ affiliations:
   - "Central University of Rajasthan"
 links:
   paper: "https://jai.front-sci.com/index.php/jai/article/view/561"
+  code: "https://github.com/katikapalli/brain-tumor-cnn"
 abstract: >
   Identifying and categorizing a brain tumor is a crucial stage in enhancing knowledge of its underlying mechanisms, with brain tumor detection being one of the most complex challenges in modern medicine, where MRI techniques provide unparalleled image quality for diagnosis, and deep learning methods have facilitated new paradigms of automated medical image identification approaches, making reliable and automated categorization techniques necessary for decreasing mortality rates caused by this significant chronic condition, which is why we offer an automatic classification method in this paper that uses a computationally efficient CNN to solve a binary problem involving MRI scans that either show or don't show brain tumors, using the Br35H benchmark dataset (freely available online) augmented before training to enhance accuracy and reduce time consumption, with experimental evaluation of statistical measures like accuracy, recall, precision, F1 score, and loss suggesting that the proposed model outperforms other state-of-the-art methods.
 framework_description: >
