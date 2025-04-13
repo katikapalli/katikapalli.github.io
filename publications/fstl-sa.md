@@ -24,7 +24,7 @@ abstract: >
 framework_description: >
   A framework that combines Audio Entity Linking (AEL) and a Knowledge-Augmented Audio Multimodal Model (kA²LM)
   is proposed to enhance large audio language models for knowledge-intensive tasks such as Audiopedia.
-framework_image: "framework.png"
+framework_image: "not-found.jpg"
 framework_caption: "The overview of our proposed framework."
 bibtex: |
   @article{penamakuri2024audiopedia,
