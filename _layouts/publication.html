@@ -90,7 +90,7 @@ layout: default
     <div class="mt-8">
       <h3 class="mb-4 text-lg font-semibold">BibTeX</h3>
       <pre class="bg-[#c7e1f3] p-4 text-sm text-gray-800 overflow-x-auto whitespace-pre-wrap">
-        <code>{% raw %}{{ page.bibtex | strip }}{% endraw %}</code>
+        <code>{{ page.bibtex | strip }}</code>
       </pre>
     </div>
   {% endif %}
@@ -98,7 +98,7 @@ layout: default
   {% if page.acknowledgement %}
   <div class="mt-8">
     <h3 class="mb-4">Acknowledgement</h3>
-    <p style="font-size: 18px;">{{ page.acknowledgement }}</p>
+    <p >{{ page.acknowledgement }}</p>
   </div>
   {% endif %}
 
