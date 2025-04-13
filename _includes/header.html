@@ -7,8 +7,12 @@
     color: #212429 !important;
   }
 
+  .site-title .fs-4 {
+    font-size: 2rem !important;
+  }
+
   .menu-item {
-    font-size: 1rem; 
+    font-size: 1.5rem; 
   }
 
   @media (max-width: 767px) {
@@ -33,9 +37,9 @@
     <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none site-title">
       <span class="fs-4 fw-bold">{{ site.title }}</span>
     </a>
-    <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none site-title">
+<!--     <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none site-title">
       <span>{{ site.description }}</span>
-    </a>
+    </a> -->
   </div>
   <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
     {% for item in site.data.settings.menu %}
