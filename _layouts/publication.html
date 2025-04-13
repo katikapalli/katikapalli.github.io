@@ -37,9 +37,7 @@ layout: default
     {% for author in page.authors %}
       <span>
         {% if author.link %}
-          <a href="{{ author.link }}" class="author-link">
-            {{ author.name }}{% if author.superscript %}<sup>{{ author.superscript }}</sup>{% endif %}
-          </a>
+          <a href="{{ author.link }}" class="author-link">{{ author.name }}</a>{% if author.superscript %}<sup>{{ author.superscript }}</sup>{% endif %}
         {% else %}
           {{ author.name }}{% if author.superscript %}<sup>{{ author.superscript }}</sup>{% endif %}
         {% endif %}
@@ -72,31 +70,31 @@ layout: default
 
   <div class=" text-center mt-5">
     <h3>Abstract</h3>
-    <p style="width: 75%; margin: 0 auto;">{{ page.abstract }}</p>
+    <p style="width: 75%; margin: 0 auto; text-align: justify">{{ page.abstract }}</p>
   </div>
 
   {% if page.framework_image or page.framework_caption %}
-  <div class="mt-5">
+  <div class="text-center mt-8">
     <h3>Framework</h3>
-    <p>{{ page.framework_description }}</p>
+    <p class="text-bold">{{ page.framework_description }}</p>
     {% if page.framework_image %}
-      <img src="{{ site.baseurl }}/assets/img/{{ page.framework_image }}" class="img-fluid my-3" alt="Framework diagram">
+      <img src="{{ site.baseurl }}/assets/img/{{ page.framework_image }}" class="img-fluid mt-5" alt="Framework diagram">
     {% endif %}
     {% if page.framework_caption %}
-      <p class="text-muted text-center"><em>{{ page.framework_caption }}</em></p>
+      <p class="text-bold text-center"><em>{{ page.framework_caption }}</em></p>
     {% endif %}
   </div>
   {% endif %}
 
   {% if page.bibtex %}
-  <div class="mt-5">
+  <div class="mt-8">
     <h3>BibTeX</h3>
-    <pre><code>{{ page.bibtex }}</code></pre>
+    <pre style="padding: 16px; color: #c0ddf2;"><code>{{ page.bibtex }}</code></pre>
   </div>
   {% endif %}
 
   {% if page.acknowledgement %}
-  <div class="mt-5">
+  <div class="mt-8">
     <h3>Acknowledgement</h3>
     <p>{{ page.acknowledgement }}</p>
   </div>
