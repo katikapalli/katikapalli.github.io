@@ -92,7 +92,9 @@
               {% endfor %}
             </p>
             <p>{{ item.publisher }}</p>
-            <p><a href="{{ item.link }}" class="links" style="--underline-color: #ff5722;">Paper</a></p>
+            <p><a href="{{ item.link }}" class="links" style="--underline-color: #ff5722;">Paper</a> / 
+               <a href="/publications/{{ item.url }}" class="links" style="--underline-color: #ff5722;">Project Page</a>
+            </p>
 <!--             <a href="/publications/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a> -->
           </div>
         </div>
@@ -119,8 +121,9 @@
               {% endfor %}
             </p>
             <p>{{ item.publisher }}</p>
-            <p><a href="{{ item.link }}" class="links" style="--underline-color: #ff5722;">Paper</a></p>
-<!--             <a href="/publications/{{ item.url }}" class="underline-animation" style="--underline-color: #d60056;">Read more</a> -->
+            <p><a href="{{ item.link }}" class="links" style="--underline-color: #ff5722;">Paper</a> / 
+               <a href="/publications/{{ item.url }}" class="links" style="--underline-color: #ff5722;">Project Page</a>
+            </p>
           </div>
         </div>
       {% endfor %}
