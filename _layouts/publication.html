@@ -37,9 +37,9 @@ layout: default
     {% for author in page.authors %}
       <span>
         {% if author.link %}
-          <a href="{{ author.link }}" class="author-link" style="font-size: 16px;">{{ author.name }}</a>{% if author.superscript %}<sup>{{ author.superscript }}</sup>{% endif %}
+          <a href="{{ author.link }}" class="author-link" style="font-size: 18px;">{{ author.name }}</a>{% if author.superscript %}<sup>{{ author.superscript }}</sup>{% endif %}
         {% else %}
-          <p style="font-size: 16px;">{{ author.name }}{% if author.superscript %}<sup>{{ author.superscript }}</sup>{% endif %}</p>
+          <p style="font-size: 18px;">{{ author.name }}{% if author.superscript %}<sup>{{ author.superscript }}</sup>{% endif %}</p>
         {% endif %}
         {% if forloop.last == false %}, {% endif %}
       </span>
