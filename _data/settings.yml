@@ -1,6 +1,6 @@
 menu:
 - {name: 'Publications', url: '/publications'}
-- {name: 'Blog', url: '/blogs'}
+# - {name: 'Blog', url: '/blogs'}
 - {name: 'CV', url: '/cv'}
 
 social:
