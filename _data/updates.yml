@@ -1,0 +1,45 @@
+news:
+  - date: "2025-12-16"
+    text: "Attending [[ICVGIP 2025]] at IIT Mandi."
+    link_url: "https://icvgip.in/2025/"
+    internal: false
+
+  - date: "2025-11-08"
+    text: "Paper: [[Pre-Consultation Dialogue Framework]] accepted to AAAI 2026 Main Track."
+    link_url: "https://vl2g.github.io/projects/pcdf"
+    internal: false
+
+  - date: "2024-12-12"
+    text: "Paper: [[Few-Shot Transfer Learning for Sentiment Analysis]] accepted to Multimedia Tools and Applications."
+    link_url: "/publications/2024-few-shot-transfer-learning"
+    internal: true
+
+  - date: "2024-11-25"
+    text: "Attended [[Winter School on Generative AI and TCS]] at IIT Jodhpur."
+    link_url: "https://cse.iitj.ac.in/index.php/events/winter-school-on-ai-and-tcs-2024"
+    internal: false
+
+  - date: "2024-08-12"
+    text: "Joined as a Research Assistant in the [[Vision Language and Learning Group (VL2G)]] at IIT Jodhpur."
+    link_url: "https://vl2g.github.io"
+    internal: false
+
+  - date: "2024-06-07"
+    text: "Thesis: Identifying Emotions Using Various Approaches secured 10/10 SGPA, sole student among ~600 peers."
+    link_url: "/assets/publications/2024-msc-thesis/paper.pdf"
+    internal: true
+
+  - date: "2023-07-21"
+    text: "Paper: [[CNN-LSTM Hybrid for Sentiment Analysis]] accepted to New Generation Computation."
+    link_url: "/assets/publications/2023-hybrid-cnn-lstm/paper.pdf"
+    internal: true
+
+  - date: "2023-05-04"
+    text: "Paper: [[Improved CNN for Brain Tumor Detection]] accepted to Journal of Autonomous Intelligence."
+    link_url: "/publications/2023-improved-cnn"
+    internal: true
+
+  - date: "2023-04-29"
+    text: "Paper: [[Hybrid Deep Learning for Sentiment and Knowledge Graphs]] accepted to Decision Analytics Journal."
+    link_url: "/assets/publications/2023-knowledge-graph/paper.pdf"
+    internal: true

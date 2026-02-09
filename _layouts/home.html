@@ -3,12 +3,33 @@ layout: default
 home: true
 ---
 
-<h3 class="posts-item-note" aria-label="Recent Posts">Recent Posts</h3>
-{%- for post in site.posts limit: site.number_of_posts -%}
-<article class="post-item">
-  <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
-  <h4 class="post-item-title">
-    <a href="{{ post.url }}">{{ post.title | escape }}</a>
-  </h4>
-</article>
-{%- endfor -%}
+<div id="about">
+  <h2 class="page-content" aria-label="About">About</h2>
+  <p>
+    I'm a Predoctoral Researcher in the <a href="https://vl2g.github.io/" target="_blank">Vision Language and Learning Group</a>
+    led by <a href="https://anandmishra22.github.io/">Dr. Anand Mishra</a> at <a href="https://www.iitj.ac.in/" target="_blank">IIT Jodhpur</a>. My research focuses on multimodal deep learning, 
+    particularly vision-language models and data-centric approaches for low-resource and culturally significant domains. 
+    My current work includes developing dialogue-driven diagnostic models in collaboration with
+    <a href="https://www.aiims.edu/" target="_blank">AIIMS</a> and applying computer vision techniques to restore degraded ancient Indian manuscripts at 
+    <a href="https://ignca.gov.in/" target="_blank">IGNCA</a>.
+  </p>
+</div>
+
+<div class="section-spacer"></div>
+
+
+<div id="publications">
+  <h2 class="page-content" aria-label="Publications">Publications</h2>
+  {%- for paper in site.data.publications.papers -%}
+  <article class="paper-item">
+    <div class="paper-title">
+      <a href="{% if paper.page %}{{ paper.page | prepend: site.baseurl }}{% elsif paper.paper_pdf %}{{ paper.paper_pdf | prepend: site.baseurl }}{% endif %}" target="_blank">
+        {{ paper.title }}
+      </a>
+    </div>
+    <div class="paper-authors">{{ paper.authors }}</div>
+    <div class="paper-venue">{{ paper.venue }}</div>
+    <br>
+  </article>
+  {%- endfor -%}
+</div>

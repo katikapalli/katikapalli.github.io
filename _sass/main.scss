@@ -1,10 +1,20 @@
 // Fonts preferences
-$sans-family: Roboto, sans-serif;
+// $sans-family: Roboto, sans-serif;
+// $mono-family: Consolas, monospace;
+// $base-font-size: 17px;
+// $medium-font-size: $base-font-size * 0.938;
+// $small-font-size: $base-font-size * 0.875;
+// $base-line-height: 1.85;
+
+// Fonts preferences
+$sans-family: Nunito, sans-serif;
 $mono-family: Consolas, monospace;
-$base-font-size: 16px;
+$base-font-size: 17px;
 $medium-font-size: $base-font-size * 0.938;
 $small-font-size: $base-font-size * 0.875;
-$base-line-height: 1.85;
+// $base-line-height: 1.85;
+$base-line-height: 1.5; // Changed from 1.85 to 1.5
+
 
 // Font weight
 // $light-weight: 300; // uncomment if necessary
@@ -13,9 +23,9 @@ $bold-weight: 700;
 // $black-weight: 900; // uncomment if necessary
 
 //Light Colors
-$text-base-color: #434648;
-$text-link-blue: #003fff;
-$text-link-blue-active: #0036c7;
+$text-base-color: #22272e;
+$text-link-blue: #0891b2;
+$text-link-blue-active: #0e7490;
 
 $black: #0d122b;
 $light: #ececec;
@@ -24,19 +34,19 @@ $gray: #6b7886;
 $white: #fff;
 
 // Dark Colors
-$dark-text-base-color: #c7bebe;
-$dark-text-link-blue: #ff5277;
-$dark-text-link-blue-active: #ff2957;
+$dark-text-base-color: #fff;
+$dark-text-link-blue: #0891b2;
+$dark-text-link-blue-active: #0e7490;
 
-$dark-black: #131418;
+$dark-black: #121418;
 $dark-white: #eaeaea;
 $dark-light: #1b1d25;
 $dark-smoke: #4a4d56;
 $dark-gray: #767f87;
 
 // Width of the content area
-$wide-size: 890px;
-$narrow-size: 720px;
+$wide-size: 1400px;
+$narrow-size: 1100px;
 
 // Padding unit
 $spacing-full: 30px;
@@ -60,4 +70,4 @@ $on-widescreen: 1152px;
 
 // Import sass files
 @import "klise/fonts", "klise/base", "klise/layout", "klise/post",
-  "klise/miscellaneous", "klise/syntax", "klise/dark";
+  "klise/miscellaneous", "klise/syntax", "klise/dark", "klise/publication";

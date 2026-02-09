@@ -13,7 +13,7 @@
             d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
           />
         </svg>
-      </span>
+      </span> 
     </label>
     <a id="mode">
       <svg
@@ -182,10 +182,10 @@
             {%- endif -%} 
           {%- endfor -%}
         {%- else -%}
-          <a class="menu-link {% if url == '/' %}active{% endif %}" href="/">home</a>
-          <a class="menu-link {% if url == '/about/' %}active{% endif %}" href="/about">about</a>
+          <a class="menu-link {% if url == '/' %}active{% endif %}" href="/">Home</a>
+          <a class="menu-link {% if url == '/#about' %}active{% endif %}" href="/#about">About</a>
         {%- endif -%}
-        <a class="menu-link rss" href="/feed.xml">
+        <!-- <a class="menu-link rss" href="/feed.xml">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="17"
@@ -204,7 +204,7 @@
               d="M48,48v86.56c185.25,0,329.22,144.08,329.22,329.44H464C464,234.66,277.67,48,48,48Z"
             />
           </svg>
-        </a>
+        </a> -->
       </div>
     </div>
   </nav>

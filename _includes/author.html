@@ -1,9 +1,70 @@
-<div class="author">
-  <img
-    class="author-avatar"
-    src="{{ site.author.avatar }}"
-    alt="{{ site.author.username }}"
-  />
-  <h2 class="author-name">{{ site.author.name }}</h2>
-  <p class="author-bio">{{ site.author.bio }}</p>
+<div class="author-education-container">
+
+  <div class="author-column">
+    <div class="author">
+      <img
+        class="author-avatar"
+        src="{{ site.author.avatar }}"
+        alt="{{ site.author.username }}"
+      />
+      <h2 class="author-name">{{ site.author.name }}</h2>
+      <p class="author-bio">{{ site.author.bio }}</p>
+    </div>
+
+    <div class="author-socials">
+      {% if site.author.email %}
+      <a href="mailto:{{ site.author.email }}" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      {% endif %}
+
+      {% if site.author.github %}
+      <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      {% endif %}
+
+      {% if site.author.twitter %}
+      <a href="https://x.com/{{ site.author.twitter }}" target="_blank" rel="noopener noreferrer" aria-label="X">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      {% endif %}
+
+      {% if site.author.linkedin %}
+      <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      {% endif %}
+
+      {% if site.author.scholar %}
+      <a href="https://scholar.google.com/citations?user={{ site.author.scholar }}" target="_blank" rel="noopener noreferrer" aria-label="Scholar">
+        <i class="fa-brands fa-google-scholar"></i>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+
+
+  <!-- Right Column: Education & Experience -->
+  <div class="timeline-column">
+    <div id="education" class="timeline-section">
+      <h2 class="page-content" style="margin-top: 0; padding-top: 0;">Education</h2>
+      <div class="timeline-entry">
+        <p class="timeline-date">July 2019 - June 2024</p>
+        <p class="timeline-title"><b>Integrated MSc in Computer Science</b>, Central University of Rajasthan</p>
+      </div>
+    </div>
+
+    <div id="experience" class="timeline-section">
+      <h2 class="page-content">Experience</h2>
+      <div class="timeline-entry">
+        <p class="timeline-date">August 2024 - Present</p>
+        <p class="timeline-title"><b>Predoctoral Researcher</b>, IIT Jodhpur</p>
+      </div>
+      <div class="timeline-entry">
+        <p class="timeline-date">March 2022 - June 2024</p>
+        <p class="timeline-title"><b>Junior Researcher</b>, Central University of Rajasthan</p>
+      </div>
+    </div>
+  </div>
 </div>

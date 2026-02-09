@@ -1,0 +1,25 @@
+papers:
+  - title: "PatientVLM Meets DocVLM: Pre-Consultation Dialogue Between Vision-Language Models for Efficient Diagnosis"
+    authors: "K Lokesh*, Abhirama Subramanyam Penamakuri*, Uday Agarwal, Apoorva Challa, Shreya K Gowda, Somesh Gupta, Anand Mishra"
+    venue: "AAAI Conference on Artificial Intelligence (Main Track), 2026"
+    page: "publications/2026-pre-consultation-dialogue-framework"
+
+  - title: "FSTL-SA: Few-shot Transfer Learning for Sentiment Analysis from Facial Expressions"
+    authors: "Gaurav Meena, Krishna Kumar Mohbey, K Lokesh "
+    venue: "Multimedia Tools and Applications (MTAP), 2024"
+    page: "publications/2024-few-shot-transfer-learning"
+
+  - title: "A CNN-LSTM Hybrid Deep Learning Approach for Sentiment Analysis on Monkeypox Tweets"
+    authors: "Krishna Kumar Mohbey, Gaurav Meena, Sunil Kumar, K Lokesh "
+    venue: "New Generation Computing, 2023"
+    page: "publications/2023-cnn-lstm-hybrid-approach"
+
+  - title: "An Improved Convolutional Neural Network-Based Model for Detecting Brain Tumors from Augmented MRI Images"
+    authors: "Gaurav Meena, Krishna Kumar Mohbey, Malika Acharya, K Lokesh "
+    venue: "Journal of Autonomous Intelligence, 2023"
+    page: "publications/2023-improved-cnn"
+
+  - title: "A Hybrid Deep Learning Approach for Detecting Sentiment Polarities and Knowledge Graph Representation on Monkeypox Tweets"
+    authors: "Gaurav Meena, Krishna Kumar Mohbey, Sunil Kumar, K Lokesh "
+    venue: "Decision Analytics Journal, 2023"
+    page: "publications/2023-knowledge-graph"

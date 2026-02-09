@@ -179,40 +179,148 @@
   }
 }
 
-// Author
-.author {
-  margin-top: 6.3rem;
-  margin-bottom: 7.2rem;
-  text-align: center;
 
+// Author and Timeline Container
+.author-education-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  margin-top: 6.3rem;
+  margin-bottom: 3rem;
+  align-items: start;
+  
   @include media-query($on-mobile) {
-    margin-bottom: 3em;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 1em;
+  }
+}
+
+.author-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+// .timeline-column {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 0;
+// }
+
+  .timeline-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-left: 2px solid $light; // Add this line
+    padding-left: 16px; // Add padding to move content away from the line
+    
+    @include media-query($on-mobile) {
+      border-left: none; // Remove border on mobile
+      padding-left: 0;
+    }
   }
 
+
+
+// Author
+.author {
+  text-align: center;
+  width: 100%;
+
   .author-avatar {
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
+    max-width: 150px;
+    width: 100%;
+    border-radius: 16px;
     user-select: none;
     background-color: $black;
     -ms-user-select: none;
     -webkit-user-select: none;
-    -webkit-animation: 0.5s ease-in forwards fadein;
-    animation: 0.5s ease-in forwards fadein;
-    opacity: 1;
   }
-
+  
   .author-name {
     font-size: 1.7em;
     margin-bottom: 2px;
   }
-
+  
   .author-bio {
     margin: 0 auto;
-    opacity: 0.9;
+    font-size: 16px;
+    // opacity: 0.9;
     max-width: 393px;
-    line-height: 1.688;
+    line-height: 1.3;
   }
+}
+
+.author-column {
+  .author-socials {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 16px;
+
+    a {
+      color: inherit !important;
+      font-size: 24px !important;
+      transition: transform 0.2s ease !important;
+      text-decoration: none !important;
+      border: none !important;
+      border-bottom: none !important;
+      background: none !important;
+      box-shadow: none !important;
+      outline: none !important;
+      display: inline-block !important;
+
+      &::before,
+      &::after {
+        display: none !important;
+      }
+
+      &:hover,
+      &:focus,
+      &:active,
+      &:visited {
+        text-decoration: none !important;
+        border-bottom: none !important;
+        transform: translateY(-2px);
+        outline: none !important;
+        box-shadow: none !important;  
+      }
+
+      i {
+        display: block !important;
+        line-height: 1 !important;
+        text-decoration: none !important;
+      }
+    }
+  }
+}
+
+
+// Timeline styling - Remove all spacing
+.section-title {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.timeline-entry {
+  margin-bottom: 20px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.timeline-date {
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+
+.timeline-title {
+  line-height: 1.4;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 // Content
@@ -226,6 +334,7 @@
 // List of posts
 .post-item {
   display: flex;
+  align-items: flex-start; // Added to align items at the top
   padding-top: 5px;
   padding-bottom: 6px;
   @extend %clearfix;
@@ -236,6 +345,7 @@
 
   .post-item-date {
     min-width: 96px;
+    flex-shrink: 0; // Prevents the date from shrinking
     color: $black;
     font-weight: 700;
     padding-right: 10px;
@@ -252,13 +362,36 @@
     font-size: $base-font-size;
     font-weight: normal;
     letter-spacing: 0.1px;
+    flex: 1;
 
     a {
-      color: $text-base-color;
+      color: #0891b2;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
 
-      &:hover,
-      &focus {
+      // Remove automatic external link icon
+      &::after {
+        display: none !important;
+        content: none !important;
+      }
+
+      &:hover {
+        color: #0e7490;
+        text-decoration: none;
+      }
+
+      &:focus {
         color: $black;
+        outline: none;
+      }
+
+      // Style the external link icon
+      .link-icon {
+        font-size: 0.85em;
+        color: #d64045;
+        flex-shrink: 0;
       }
     }
   }
@@ -266,7 +399,7 @@
 
 // Footer
 .footer {
-  margin-top: 8em;
+  margin-top: 3em;
   margin-bottom: 2em;
   text-align: center;
 
@@ -377,4 +510,28 @@
     border: 1px solid rgba(128, 128, 128, 0.1);
     background-color: rgba(128, 128, 128, 0.1);
   }
+}
+
+a, 
+a:focus, 
+a:active, 
+a:visited,
+a:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+button,
+button:focus,
+button:active,
+button:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+*:focus,
+*:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
 }

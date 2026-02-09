@@ -41,6 +41,10 @@ figure {
   padding: 0;
 }
 
+.section-spacer {
+  height: 10px;
+}
+
 // Basic styling
 body {
   min-height: 100vh;
@@ -366,4 +370,46 @@ mark,
       border: 0;
     }
   }
+}
+
+#about a {
+    color: #0891b2;
+    text-decoration: none;
+  }
+
+  #about a:hover {
+    color: #0e7490;
+    text-decoration: none;
+  }
+
+
+.paper-item {
+  margin-bottom: 10px;
+}
+
+.paper-title {
+  font-weight: 600;
+  // font-size: 19px;
+  // margin-bottom: 5px;
+  // line-height: 1.4;
+
+  a {
+    // color: #3386aa;
+    color: #0891b2;
+    text-decoration: none;
+
+    &:hover {
+      color: #0e7490;
+      text-decoration: none;
+    }
+  }
+}
+
+// .paper-authors {
+//   // font-style: italic;
+//   // font-size: 16px;
+// }
+
+.paper-venue {
+  margin-bottom: 0px;
 }
