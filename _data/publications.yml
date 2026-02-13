@@ -6,7 +6,7 @@ papers:
 
   - title: "FSTL-SA: Few-shot Transfer Learning for Sentiment Analysis from Facial Expressions"
     authors: "Gaurav Meena, Krishna Kumar Mohbey, K Lokesh "
-    venue: "Multimedia Tools and Applications (MTAP), 2024"
+    venue: "Multimedia Tools and Applications, 2024"
     page: "publications/2024-few-shot-transfer-learning"
 
   - title: "A CNN-LSTM Hybrid Deep Learning Approach for Sentiment Analysis on Monkeypox Tweets"
